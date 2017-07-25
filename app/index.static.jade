@@ -22,21 +22,21 @@ body
         | moll.avtolombard@mail.ru
     .page-header__tel
       | +7 922 183-12-52
-    .page-header__tel-button
+    .page-header__tel-btn
       | Заказать звонок
     .burger.menu-btn
 
   div#fullpage
     .section.section1
       .container
-        .section1__title
+        .section__title
           .section1__title1
             | ДЕНЬГИ ПОД ПТС
           .section1__title2
             | Автомобиль остается у Вас
         .section1__text
           | Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут
-      form.form(action="#" method="#")
+      form.section1__form(action="#" method="#")
         input(type="text" name="your-name" placeholder="Имя")
         input(type="tel" name="your-tel" placeholder="Телефон")
         .checkbox-wrapper
@@ -54,8 +54,53 @@ body
               a(href="#")Обработку персональных данных
             .checkbox-wrapper__text-2
               | Ваши данные не будут переданы третьим лицам
+        a(href="#").btn.section1__form-btn
+          | Звоните
+      .section1__features
+        .section1__features-item
+          .section1__features-item-icon.section1__features-item-icon-1
+          .section1__features-item-text
+            | При заключении договора, деньги наличными сразу
+        .section1__features-item
+          .section1__features-item-icon.section1__features-item-icon-2
+          .section1__features-item-text
+            | Пересчет процентов за пользование займом по дням
+        .section1__features-item
+          .section1__features-item-icon.section1__features-item-icon-3
+          .section1__features-item-text
+            | Не требуются доверенность или договор купли-продажи
+
     .section.section2
       .container
+        .section2__title-wrapper
+          .section__title
+            | процесс получения займа
+          .section2__text
+            | Три простых шага к получению нужной Вам денежной суммы
+          a(href="#").btn.section1__form-btn
+          | Получить займ
+        .section2__item.section2__item-3
+          .section2__item-icon.section2__item-icon-3
+          .section2__item-text-wrapper
+            .section2__item-digit
+              | 03
+            .section2__item-text
+              | Приезжайте за своими деньгами
+        .section2__item.section2__item-1
+          .section2__item-icon.section2__item-icon-1
+          .section2__item-text-wrapper
+            .section2__item-digit
+              | 01
+            .section2__item-text
+              | Позвоните или оставьте номер телефона
+        .section2__item.section2__item-2
+          .section2__item-icon.section2__item-icon-1
+          .section2__item-text-wrapper
+            .section2__item-digit
+              | 02
+            .section2__item-text
+              | Узнайте решение в течение 30 минут
+
     .section.section3
       .container
     .section.section4
