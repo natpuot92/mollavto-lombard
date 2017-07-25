@@ -1,0 +1,80 @@
+doctype html
+head
+  title Mollavto Lombard
+  meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+  meta(name="viewport" content="width=device-width")
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+  link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css")
+  link(rel="stylesheet" href="stylesheets/app.css")
+body
+  header.page-header
+    .page-header__logo
+    .page-header__location-time-wrapper
+      .page-header__location
+        span
+        | 454048, г. Челябинск, ул. Образцова, 25
+      .page-header__time
+        span
+        |  с пн.-пт. с 9-00 до 19-00
+    .page-header__mail
+      a(href= "mailto:moll.avtolombard@mail.ru")
+        | moll.avtolombard@mail.ru
+    .page-header__tel
+      | +7 922 183-12-52
+    .page-header__tel-button
+      | Заказать звонок
+    .burger.menu-btn
+
+  div#fullpage
+    .section.section1
+      .container
+        .section1__title
+          .section1__title1
+            | ДЕНЬГИ ПОД ПТС
+          .section1__title2
+            | Автомобиль остается у Вас
+        .section1__text
+          | Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут
+      form.form(action="#" method="#")
+        input(type="text" name="your-name" placeholder="Имя")
+        input(type="tel" name="your-tel" placeholder="Телефон")
+        .checkbox-wrapper
+          .checkbox-wrapper__checkbox
+            input(type="checkbox" checked)
+            .checkbox
+              span.checkbox__circle
+              span.checkbox__yes.checkbox-active
+                | да
+              span.checkbox__no
+                | нет
+          .checkbox-wrapper__text
+            .checkbox-wrapper__text-1
+              | Даю согласие на
+              a(href="#")Обработку персональных данных
+            .checkbox-wrapper__text-2
+              | Ваши данные не будут переданы третьим лицам
+    .section.section2
+      .container
+    .section.section3
+      .container
+    .section.section4
+      .container
+    .section.section5
+      .container
+    .section.section6
+      .container
+    .section.section7
+      .container
+    .section.section8
+      .container
+    .section.section9
+      .container
+    .section.section10
+      .container
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('initialize');
