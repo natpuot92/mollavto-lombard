@@ -1,4 +1,19 @@
 .btn {
   display: inline-block;
-  padding: 15px 26px 14px;
+  padding: 16px 60px;
+
+  border-radius: 27.5px;
+  background-color: #accc3d;
+
+  box-shadow: 0 4px 0 0 #63771e;
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #030206;
+
+  &:hover {
+    box-shadow: 0 4px 0 0 #63771e, inset 0 -8px 40px 0 #63771e;
+  }
 }
