@@ -1,0 +1,19 @@
+.section3 {
+  background: url('../images/2 -background.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.section3-title {
+  font-family: Intro;
+  font-size: 36px;
+  color: #ffffff;
+
+  &::after {
+    bottom: -45px;
+  }
+}
+
+.section3__text {
+  font-family: Roboto;
+  font-size: 24px;
+}

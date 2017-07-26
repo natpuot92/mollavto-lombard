@@ -26,7 +26,8 @@ body
         | +7 922 183-12-52
       a(href="#").page-header__tel-btn
         | Заказать звонок
-      a(href="#").burger.menu-btn
+      .menu-btn
+        a(href="#").burger
     .page-header.main-nav
       ul
         li
@@ -62,7 +63,7 @@ body
   div#fullpage
     .section.section1
       .container
-        .section__title
+        .section__title.section1-title
           .section1__title1
             | ДЕНЬГИ ПОД ПТС
           .section1__title2
@@ -105,37 +106,43 @@ body
     .section.section2
       .container
         .section2__title-wrapper
-          .section__title
+          .section__title.section2__title
             | процесс получения займа
           .section2__text
             | Три простых шага к получению нужной Вам денежной суммы
-          a(href="#").btn.section1__form-btn
-          | Получить займ
+          a(href="#").btn.section2__form-btn
+            | Получить займ
         .section2__item.section2__item-3
           .section2__item-icon.section2__item-icon-3
           .section2__item-text-wrapper
             .section2__item-digit
               | 03
             .section2__item-text
-              | Приезжайте за своими деньгами
+              | Приезжайте
+              br.section2__item-text
+              за своими деньгами
         .section2__item.section2__item-1
           .section2__item-icon.section2__item-icon-1
           .section2__item-text-wrapper
             .section2__item-digit
               | 01
             .section2__item-text
-              | Позвоните или оставьте номер телефона
+              | Позвоните или оставьте
+              br.section2__item-text
+              номер телефона
         .section2__item.section2__item-2
-          .section2__item-icon.section2__item-icon-1
+          .section2__item-icon.section2__item-icon-2
           .section2__item-text-wrapper
             .section2__item-digit
               | 02
             .section2__item-text
-              | Узнайте решение в течение 30 минут
+              | Узнайте решение
+              br.section2__item-text
+              в течение 30 минут
 
     .section.section3
       .container
-        .section__title
+        .section__title.section3-title
           | преимущества
         .section3__text
           | Почему Вам  выгодно взять займ у нас

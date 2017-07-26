@@ -139,11 +139,17 @@
   }
 }
 
+.menu-btn {
+  position: relative;
+  top: 10px;
+  float: right;
+
+  cursor: pointer;
+}
+
 .burger {
   position: relative;
-  top: 19px;
 
-  float: right;
   display: inline-block;
   vertical-align: middle;
   width: 27px;
