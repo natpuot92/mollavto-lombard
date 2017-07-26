@@ -9,7 +9,7 @@ head
   link(rel="stylesheet" href="stylesheets/app.css")
 body
   header.page-header
-    .page-header__logo
+    a(href="#").page-header__logo
     .page-header__location-time-wrapper
       .page-header__location
         span
@@ -24,8 +24,39 @@ body
       | +7 922 183-12-52
     .page-header__tel-btn
       | Заказать звонок
-    .burger.menu-btn
-
+    a(href="").burger.menu-btn
+    .page-header.main-nav
+      ul
+        li
+          a(href="#page-1")
+            | Home
+        li
+          a(href="#page-2")
+            | процесс получения займа
+        li
+          a(href="#page-3")
+            | Преимущества
+        li
+          a(href="#page-4")
+            | Ставки и условия
+        li
+          a(href="#page-5")
+            | О компании
+        li
+          a(href="#page-6")
+            | Условия займа
+        li
+          a(href="#page-7")
+            | Лицензии и документы
+        li
+          a(href="#page-8")
+            | Часто задаваемые вопросы
+        li
+          a(href="#page-9")
+            | Отзывы клиентов
+        li
+          a(href="#page-10")
+            | Контакты
   div#fullpage
     .section.section1
       .container
@@ -36,7 +67,7 @@ body
             | Автомобиль остается у Вас
         .section1__text
           | Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут
-      form.section1__form(action="#" method="#")
+      form(action="#" method="#").section1__form
         input(type="text" name="your-name" placeholder="Имя")
         input(type="tel" name="your-tel" placeholder="Телефон")
         .checkbox-wrapper
@@ -103,20 +134,321 @@ body
 
     .section.section3
       .container
+        .section__title
+          | преимущества
+        .section3__text
+          | Почему Вам  выгодно взять займ у нас
+        .section3.big-slider
+          .big-slider__slide-1
+            .big-slider__slide-circle
+            .big-slider__slide-foto.big-slider__slide-foto-1
+          .big-slider__slide-2
+            .big-slider__slide-circle
+            .big-slider__slide-foto.big-slider__slide-foto-2
+          .big-slider__slide-3
+            .big-slider__slide-circle
+            .big-slider__slide-foto.big-slider__slide-foto-3
+          .big-slider__slide-4
+            .big-slider__slide-circle
+            .big-slider__slide-foto.big-slider__slide-foto-4
+            .big-slider__slide-foto-4-img
+          .big-slider__slide-5
+            .big-slider__slide-circle
+            .big-slider__slide-foto.big-slider__slide-foto-5
+        .section3.min-slider
+          .min-slider__slide-1
+            .min-slider__icon.min-slider__icon-1
+            .min-slider__text
+              | Не требуем генеральной доверенности и договор купли-продажи
+          .min-slider__slide-2
+            .min-slider__icon.min-slider__icon-2
+            .min-slider__text
+              | Пересчет процентов за пользование займом по дням
+          .min-slider__slide-3
+            .min-slider__icon.min-slider__icon-3
+            .min-slider__text
+              | При заключении договора, деньги наличными сразу
+          .min-slider__slide-4
+            .min-slider__icon.min-slider__icon-4
+            .min-slider__text
+              | Высокая лояльность к клиентам
+          .min-slider__slide-5
+            .min-slider__icon.min-slider__icon-5
+            .min-slider__text
+              | Работаем официально, состоим на учете в ЦБ
     .section.section4
       .container
+        .section__title
+          | ставки, условия
+        .section4__text
+          | Меньше сроки - меньше процент!
+        .section4__percent
+          .section4__percent-digit
+          .section4__percent-text-1
+            | Низкий процент ставок!
+          .section4__percent-text-2
+            | Меньше сроки меньше процент!
+        .section__passport
+          .section__passport-wrapper
+            .section__passport-item
+              .section__passport-icon.section4__passport-icon-1
+              .section__passport-text
+                | Паспорт гражданина РФ
+            .section__passport-item
+              .section__passport-icon.section4__passport-icon-2
+              .section__passport-text
+                | Паспорт технического средства (ПТС)
+            .section__passport-item
+              .section__passport-icon.section4__passport-icon-3
+              .section__passport-text
+                | Свидетельство о регистрации транспортного средства
+            .section__passport-item
+              .section__passport-icon.section4__passport-icon-4
+              .section__passport-text
+                | Комплект ключей и брелоков
     .section.section5
       .container
+        .section__title
+          | о компании
+        .section5__text
+          div
+            | Займ под залог - на сегодня это единственный способ получить крупную сумму под небольшой процент.
+          div
+            | Кредиты под залог автомобиля выдают многие автоломбарды, но немногие предоставляют кредиты с возможностью пользования автомобилем.
+          div
+            | Вы сможете пользоваться собственным авто все время действия договора по программе " Авто остается у Вас". Не нужно расставаться с собственным авто, не нужно оставлять его на стоянке автоломбарда, переживать за его сохранность, надеясь на порядочность кредитора.
+          div
+            | Используйте свой автомобиль с максимальной выгодой для себя и своих близких.
+        a(href="#").btn.section5__btn
+          | Получить займм
     .section.section6
       .container
+        .section__title
+          | условия займа
+        .section6__content
+          .section6__content-block
+            .section6__content-block-icon.section6__content-block-icon-1
+            .section6__content-block-title
+              | Требования к заемщику
+            ul
+              li
+                | Гражданство РФ
+              li
+                | Заемщик является собственником автотранспортного средства
+              li
+                | Место постоянного проживания и прописка в Свердловской области
+              li
+                | Отсутствие исполнительных производств
+          .section6__content-block
+            .section6__content-block-icon.section6__content-block-icon-2
+            .section6__content-block-title
+              | Требования к автомобилю
+            ul
+              li
+                | Автомобиль должен быть на ходу, технически исправным
+              li
+                | Право собственности зарегистрировано в ГИБДД
+              li
+                | Не заложен в банке и не обременен правами третьих лиц
+              li
+                | Отсутствие арестов и ограничений
+          .section__passport
+            .section__passport-wrapper
+              .section__passport-item
+                .section__passport-icon.section4__passport-icon-1
+                .section__passport-text
+                  | Паспорт гражданина РФ
+              .section__passport-item
+                .section__passport-icon.section4__passport-icon-2
+                .section__passport-text
+                  | Паспорт технического средства (ПТС)
+              .section__passport-item
+                .section__passport-icon.section4__passport-icon-3
+                .section__passport-text
+                  | Свидетельство о регистрации транспортного средства
+              .section__passport-item
+                .section__passport-icon.section4__passport-icon-4
+                .section__passport-text
+                  | Комплект ключей и брелоков
     .section.section7
       .container
+        .section__title
+          | лицензии и документы
+        .section7__text
+          | Взяв у нас займ, Вы ни чем не рискуете. Мы работаем открыто!
+        a(href="#").btn.section7__btn
+          | Получить займм
+        .section7__license-wrapper
+          .section7__license.section7__license-1
+          .section7__license.section7__license-2
+          .section7__license.section7__license-3
+          .section7__license.section7__license-4
+          .section7__license.section7__license-5
+          .section7__license.section7__license-6
+          .section7__license.section7__license-7
+          .section7__license.section7__license-8
     .section.section8
       .container
+        .section__title
+          | часто задаваемые вопросы
+        .section8__ask-wrapper
+          .section8__ask.section8__ask-1
+            | 1. Сколько денег я получу за свой автомобиль (процент от стоимости авто)?
+          .section8__ask.section8__ask-2
+            | 2. Если на руках дубликат ПТС (потерян ПТС, кончилось место в ПТС т.д.)?
+          .section8__ask.section8__ask-3
+            | 3. Как быстро я смогу получить ПТС после оплаты займа?
+          .section8__ask.section8__ask-4
+            | 4. Нужно ли приезжать в офис на автомобиле? Что, если автомобиль не на ходу?
+          .section8__ask.section8__ask-5
+            | 5. Нужно ли оформлять на Молл-Авто ломбард генеральную доверенность?
+          .section8__ask.section8__ask-6
+            | 6. Нужно ли выезжать еще куда-то для заключения договора?
+          .section8__ask.section8__ask-7
+            | 7. Что будет при просрочке платежей?
+          .section8__ask.section8__ask-8
+            | 8. При просрочке платежей смогут забрать мое авто?
+          .section8__ask.section8__ask-9
+            | 9. Если долго не вносить платежи (месяц, два) или нет денег для того, чтобы вносить платежи регулярно, что будет?
+          .section8__ask.section8__ask-10
+            | 10. Какие документы могут быть необходимы для получения заёмных денег под ПТС?
+          .section8__ask.section8__ask-11
+            | 11. Если я использую автомобиль по доверенности, могу ли я получить деньги, заложив ПТС?
+          .section8__ask.section8__ask-12
+            | 12. Автомобиль взят в кредит, ПТС находится в банке. Можно ли в таком случае взять займ?
+          .section8__ask.section8__ask-13
+            | 13. После оплаты суммы займа возникают ли скрытые проценты?
+          .section8__ask.section8__ask-14
+            | 14. Ставится ли какая-либо отметка о залоге в ПТС?
+          .section8__ask.section8__ask-15
+            | 15. Какие документы после заключения сделки останутся в Молл-Автоломбард?
+          .section8__ask.section8__ask-16
+            | 16. У меня нет второго комплекта ключей?
+          .section8__ask.section8__ask-17
+            | 17. Я могу получить займ если на автомобиль наложен арест или запрет на регистрационные действия?
+        .section8__your-ask
+          .section8__your-ask-text
+            | Если не нашли что искали Вы можете задать свой вопрос
+          a(href="#").btn.section8__btn
+          | Задать вопрос
     .section.section9
       .container
+        .section__title
+          | отзывы клиентов о работе с нами
+        .section9__slider
+          .section9__slide.section9__slide-1
+            .section9__slide-icon
+            .section9__slide-wrapper
+              .section9__slide-title
+                | Вася
+              .section9__slide-text
+                p
+                  | Кредиты под залог автомобиля выдают многие автоломбарды, но немногие предоставляют кредиты с возможностью пользования автомобилем. Вы сможете пользоваться собственным авто все время действия договора по программе " Авто остается у Вас".
+                p
+                  | Не нужно расставаться с собственным авто, не нужно оставлять его на стоянке автоломбарда, переживать за его сохранность, надеясь на порядочность кредитора. Используйте свой автомобиль с максимальной выгодой для себя и своих близких.
+          .section9__slide.section9__slide-2
+            .section9__slide-icon
+            .section9__slide-wrapper
+              .section9__slide-title
+                | Вася
+              .section9__slide-text
+                | Текст
+          .section9__slide.section9__slide-2
+            .section9__slide-icon
+            .section9__slide-wrapper
+              .section9__slide-title
+                | Вася
+              .section9__slide-text
+                | Текст
+          .section9__slide.section9__slide-2
+            .section9__slide-icon
+            .section9__slide-wrapper
+              .section9__slide-title
+                | Вася
+              .section9__slide-text
+                | Текст
+          .section9__slide.section9__slide-2
+            .section9__slide-icon
+            .section9__slide-wrapper
+              .section9__slide-title
+                | Вася
+              .section9__slide-text
+                | Текст
+        .section9__counter
+          span.section9__counter-big
+            | 01
+          =" "
+          span.section9__counter-min
+            | | 05
+        .section9__slider-controls
+          .section9__slider-control-left
+            | Назад
+          .section9__slider-control-right
+            | вперед
     .section.section10
       .container
+        .section10__wrapper-desc
+          .section__title
+            | контакты
+          .section10__text
+            | Вы можете оставить Ваши контакты и мы сами свяжемся с Вами
+          a(href="#").btn.section10__btn
+          | Оставить контакты
+          .section10__location
+            span.section10__location-icon
+            | 454048, г. Челябинск, ул. Образцова, 25
+          .section10__time
+            span.section10__time-icon
+            | с пн.-пт. с 9-00 до 19-00
+          .section10__tel
+            span.section10__tel-icon
+            | +7 922 183-12-52
+          .section10__email
+            span.section10__email-icon
+            a(href= "mailto:moll.avtolombard@mail.ru")
+              | moll.avtolombard@mail.ru
+        .section10__wrapper-map
+      .section10__footer
+        .section10__footer-copyright
+          | © Mollavtolombard 2017
+        a(href="#").section10__footer-person-data
+          | Обработка персональных данных
+        .social-links
+          a(href="#").social-links__google
+          a(href="#").social-links__mail
+          a(href="#").social-links__facebook
+          a(href="#").social-links__vk
+          a(href="#").social-links__twitter
+        a(href="#").chile
+  .popup__phone.hidden
+    .overlay
+      .popup__phone-container
+        a(href="#").popup__phone-btn-close
+        .popup__phone-title
+          | Закажите звонок
+        .popup__phone-text
+          | Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут
+        form(action="#" method="#").popup__phone-form
+        input(type="text" name="your-name" placeholder="Имя")
+        input(type="tel" name="your-tel" placeholder="Телефон")
+        .checkbox-wrapper
+          .checkbox-wrapper__checkbox
+            input(type="checkbox" checked)
+            .checkbox
+              span.checkbox__circle
+              span.checkbox__yes.checkbox-active
+                | да
+              span.checkbox__no
+                | нет
+          .checkbox-wrapper__text
+            .checkbox-wrapper__text-1
+              | Даю согласие на
+              a(href="#")Обработку персональных данных
+            .checkbox-wrapper__text-2
+              | Ваши данные не будут переданы третьим лицам
+        a(href="#").btn.section1__form-btn
+          | Заказать звоните
+
 
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
