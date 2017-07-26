@@ -1,9 +1,11 @@
 .section3 {
-  background: url('../images/2 -background.jpg') no-repeat center;
+  background: url('../images/2-background.jpg') no-repeat center;
   background-size: cover;
 }
 
 .section3-title {
+  margin-bottom: 83px;
+
   font-family: Intro;
   font-size: 36px;
   color: #ffffff;
@@ -14,6 +16,95 @@
 }
 
 .section3__text {
+  margin-bottom: 60px;
+
   font-family: Roboto;
   font-size: 24px;
+  color: #ffffff;
+}
+
+.section3__big-slider {
+  position: relative;
+
+  display: inline-block;
+
+  z-index: 10;
+  max-width: 665px;
+  width: 100%;
+  min-height: 500px;
+}
+
+.big-slider__slide {
+  width: 660px;
+  height: 460px;
+}
+
+.big-slider__slide img {
+  position: absolute;
+  z-index: 10;
+  margin: 0 auto;
+
+}
+
+.big-slider__slide-foto {
+  z-index: 10;
+}
+
+.big-slider__slide-foto-1 {
+  top: 10px;
+
+}
+
+.big-slider__slide-foto-2 {
+  top: 20px;
+  left: -100px;
+}
+
+.big-slider__slide-foto-3 {
+  top: 35px;
+  left: -20px;
+}
+
+.big-slider__slide-foto-4 {
+  left: -180px;
+}
+
+.big-slider__slide-foto-5 {
+  top: 20px;
+  left: 40px;
+}
+
+.big-slider__slide-foto-4-img {
+  position: absolute;
+  top: 110px;
+  left: 30px;
+
+  z-index: 20;
+
+  width: 430px;
+  height: 269px;
+
+  background: url('../images/laptop-foto.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.big-slider__slide-circle {
+  position: absolute;
+  //left: 50%;
+  //transform: translateX(-50%);
+
+  margin: auto;
+
+  z-index: 1;
+
+  width: 459px;
+  height: 459px;
+  border: 50px solid rgba(79, 87, 100, 0.5);
+  border-radius: 50%;
+}
+
+.section3__min-slider {
+  display: inline-block;
+
+  vertical-align: top;
 }

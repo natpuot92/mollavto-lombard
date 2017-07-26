@@ -39,6 +39,15 @@ function initSlick () {
   })
 }
 
+$('.section3__big-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+
+});
+
+
 $(document).ready(() => {
   initSlick()
 })
