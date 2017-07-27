@@ -3,3 +3,38 @@
   background-size: cover;
   color: #fff;
 }
+
+.section7__title {
+  margin-bottom: 65px;
+  color: #fff;
+
+  &::after {
+    bottom: -34px;
+  }
+}
+
+.section7__text {
+  margin-bottom: 64px;
+
+  color: #fff;
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+.section7__btn {
+  margin-bottom: 80px;
+}
+
+.section7__license {
+  display: inline-block;
+  vertical-align: top;
+  width: 147px;
+  height: 208px;
+  margin-right: 86px;
+  margin-bottom: 68px;
+
+  cursor: pointer;
+
+  background: url('../images/license.png') no-repeat center;
+  background-size: contain;
+}
