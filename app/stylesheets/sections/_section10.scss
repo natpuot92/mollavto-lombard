@@ -1,0 +1,57 @@
+.section10__container {
+
+}
+
+.section10__wrapper-desc {
+  margin-right: 151px;
+}
+
+.section10__title {
+  margin-bottom: 92px;
+
+  &::after {
+    bottom: -47px;
+  }
+
+  font-family: Intro;
+  font-size: 36px;
+  color: #030206;
+}
+
+.section10__text {
+  max-width: 420px;
+  width: 100%;
+  margin-bottom: 42px;
+
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 1.42;
+  color: #030206;
+}
+
+.section10__btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 94px;
+}
+
+.section10__location,
+.section10__time,
+.section10__tel,
+.section10__email {
+  margin-bottom: 52px;
+
+  font-size: 18px;
+  color: #030206;
+}
+
+.section10__tel {
+  font-weight: 900;
+color: #030206;
+}
+
+.section10__email a {
+  text-decoration: underline;
+  color: #030206;
+}
+

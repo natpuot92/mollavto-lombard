@@ -55,9 +55,22 @@ $('.section3__min-slider').slick({
   fade: true,
   autoplay: true,
   autoplaySpeed: 2500
-
 });
 
+$('.section9__slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  autoplay: true,
+  autoplaySpeed: 2500
+});
+
+$('.section9__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  $('.section9__counter-big').text('0' + (nextSlide + 1));
+  console.log(currentSlide);
+  //console.log(nextSlide);
+});
 
 $(document).ready(() => {
   initSlick()
