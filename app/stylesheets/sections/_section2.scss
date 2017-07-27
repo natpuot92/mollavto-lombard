@@ -54,11 +54,38 @@
 
   background: url('../images/frame1.png') no-repeat center;
   background-size: contain;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 122px;
+    right: -45px;
+
+    display: block;
+    width: 85px;
+    height: 27px;
+
+    background: url('../images/green-line-2.svg') no-repeat center;
+  }
 }
 
 .section2__item-2 {
   background: url('../images/frame2.png') no-repeat center;
   background-size: contain;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 109px;
+    transform: rotate(-90deg);
+
+    display: block;
+    width: 85px;
+    height: 27px;
+
+    background: url('../images/green-line-2.svg') no-repeat center;
+  }
 }
 
 .section2__item-text-wrapper {

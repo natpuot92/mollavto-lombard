@@ -1,0 +1,30 @@
+.section6__title {
+  margin-bottom: 80px;
+
+  &::after {
+    bottom: -44px;
+  }
+}
+
+.section6__text {
+  margin-bottom: 57px;
+
+  font-size: 24px;
+  color: #030206;
+}
+
+.section6__content-block {
+  display: inline-block;
+  padding-left: 114px;
+  padding-top: 31px;
+
+  width: 486px;
+  height: 375px;
+  border: solid 10px #dcdcdc;
+}
+
+.section6__content-block-title {
+  font-family: Intro;
+  font-size: 18px;
+  color: #030206;
+}

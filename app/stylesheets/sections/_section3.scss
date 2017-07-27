@@ -90,10 +90,6 @@
 
 .big-slider__slide-circle {
   position: absolute;
-  //left: 50%;
-  //transform: translateX(-50%);
-
-  margin: auto;
 
   z-index: 1;
 
@@ -103,8 +99,34 @@
   border-radius: 50%;
 }
 
-.section3__min-slider {
-  display: inline-block;
 
+
+.section3__min-slider {
+  z-index: 20;
+
+  display: inline-block;
+  max-width: 299px;
+  width: 100%;
   vertical-align: top;
+
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+
+.min-slider__icon {
+  display: block;
+
+  min-height: 82px;
+  max-width: 80px;
+  width: 100%;
+
+  margin-bottom: 63px;
+
+}
+
+.min-slider__text {
+  font-size: 16px;
 }

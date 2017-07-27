@@ -1,0 +1,31 @@
+.section5 {
+  background: url('../images/3-background.jpg') no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.section5__title {
+  margin-bottom: 98px;
+
+  font-family: Intro;
+  font-size: 36px;
+  color: #fff;
+
+
+  &::after {
+    bottom: -48px;
+  }
+}
+
+.section5__text {
+  max-width: 875px;
+  width: 100%;
+  margin-bottom: 78px;
+
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.section5__text div {
+  margin-bottom: 26px;
+}
