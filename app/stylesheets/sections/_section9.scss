@@ -1,0 +1,20 @@
+.section9 {
+  background: url('../images/5-background.jpg') no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.section9__title {
+  max-width: 393px;
+  width: 100%;
+  margin-bottom: 136px;
+
+  font-family: Intro;
+  font-size: 36px;
+  line-height: 1.28;
+  color: #ffffff;
+
+  &::after {
+    bottom: -42px;
+  }
+}
