@@ -1,9 +1,10 @@
-.section10__container {
-
+.section10 {
+  position: relative;
 }
 
 .section10__wrapper-desc {
   margin-right: 151px;
+
 }
 
 .section10__title {
@@ -47,7 +48,7 @@
 
 .section10__tel {
   font-weight: 900;
-color: #030206;
+  color: #030206;
 }
 
 .section10__email a {
@@ -55,3 +56,119 @@ color: #030206;
   color: #030206;
 }
 
+.section10__map {
+  position: absolute;
+  top: 110px;
+  right: 0;
+
+
+  display: block;
+  width: 943px;
+  height: 771px;
+
+  background: url('../images/map.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.section10__footer {
+  width: 100%;
+  min-height: 59px;
+  padding: 0 40px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.section10__footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 317px;
+}
+
+.section10__footer-copyright {
+  margin-right: 110px;
+  vertical-align: middle;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #030206;
+}
+
+.section10__footer-person-data {
+  display: inline-block;
+  vertical-align: middle;
+
+  color: #accc3d;
+}
+
+.social-links {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 295px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 28px;
+  vertical-align: middle;
+  width: 26px;
+  height: 19px;
+
+}
+
+.social-links__google {
+  background: url('../images/social-icons-google.png') no-repeat center;
+}
+
+.social-links__mail {
+  background: url('../images/social-icons-mail.png') no-repeat center;
+}
+
+.social-links__facebook {
+  background: url('../images/social-icons-facebook.png') no-repeat center;
+}
+
+.social-links__vk {
+  background: url('../images/social-icons-vk.png') no-repeat center;
+
+}
+
+.social-links__twitter {
+  background: url('../images/social-icons-twitter.png') no-repeat center;
+}
+
+.social-links__google:hover {
+  background: url('../images/social-icons-google-hover.png') no-repeat center;
+}
+
+.social-links__mail:hover {
+  background: url('../images/social-icons-mail-hover.png') no-repeat center;
+}
+
+.social-links__facebook:hover {
+  background: url('../images/social-icons-facebook-hover.png') no-repeat center;
+}
+
+.social-links__vk:hover {
+  background: url('../images/social-icons-vk-hover.png') no-repeat center;
+
+}
+
+.social-links__twitter:hover {
+  background: url('../images/social-icons-twitter-hover.png') no-repeat center;
+}
+
+.chile {
+  position: relative;
+  top: -30px;
+  display: block;
+  float: right;
+  height: 41px;
+  width: 62px;
+  background: url(../images/chile-logo.png) no-repeat center;
+}
+
+.chile:hover {
+  background: url(../images/chile-logo-hover.png) no-repeat center;
+}
