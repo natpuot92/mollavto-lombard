@@ -1,0 +1,185 @@
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  overflow: auto;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup__container {
+  position: fixed;
+
+  z-index: 100;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 765px;
+  min-height: 524px;
+  padding-top: 50px;
+  padding-left: 96px;
+  padding-right: 100px;
+  padding-bottom: 90px;
+
+  background: #fff;
+
+}
+
+.popup__btn-close {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+
+
+  width: 27px;
+  height: 27px;
+
+
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+
+    display: block;
+    width: 27px;
+    height: 2px;
+
+    transform: rotate(45deg);
+
+    background: #b2b2b2;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+
+    display: block;
+    width: 27px;
+    height: 2px;
+
+    transform: rotate(-45deg);
+
+    background: #b2b2b2;
+  }
+}
+
+.popup__btn-close:hover::after {
+  background: #000000
+}
+
+.popup__btn-close:hover::before {
+  background: #000000
+}
+
+.popup__title {
+  margin-bottom: 31px;
+
+  font-family: Intro;
+  font-size: 24px;
+}
+
+.popup__text {
+
+  margin-bottom: 40px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.checkbox-wrapper__text-popup {
+  color: #000;
+}
+
+.popup__ask-text {
+  max-width: 460px;
+  width: 100%;
+}
+
+.popup__review-text {
+  max-width: 390px;
+  width: 100%;
+}
+
+.popup__checkbox {
+  background-color: #e8e8e8;
+}
+
+.popup__phone-form-input {
+  max-width: 425px;
+  width: 100%;
+
+  display: block;
+  height: 35px;
+  margin-bottom: 25px;
+  padding-left: 17px;
+
+  border-radius: 5px;
+  background: none;
+  border: solid 1px #888888;
+
+}
+
+.popup__btn {
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.popup__phone-form-textarea {
+  max-width: 425px;
+  width: 100%;
+  min-height: 143px;
+  margin-bottom: 30px;
+
+  padding-left: 17px;
+
+  border-radius: 5px;
+  background: none;
+  border: solid 1px #888888;
+}
+
+.popup__success-img  {
+  width: 439px;
+  height: 260px;
+  margin: 0 auto;
+
+  background: url('../images/popup-car.png') no-repeat center;
+  background-size: contain;
+}
+
+.popup__success-title {
+  text-align: center;
+}
+
+.popup__success-container {
+  padding-top: 75px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.popup__success-text {
+  width: 100%;
+  text-align: center;
+}
+
+.popup__success-container-ask {
+  padding-top: 155px;
+  min-height: 700px;
+}
+
+.popup__success-container-review {
+  min-height: 639px;
+  padding-top: 100px;
+}
+
+.popup__success-text-review {
+  max-width: 381px;
+  width: 100%;
+  margin: 0 auto;
+}

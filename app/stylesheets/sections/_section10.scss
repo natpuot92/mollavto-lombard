@@ -40,10 +40,41 @@
 .section10__time,
 .section10__tel,
 .section10__email {
+  position: relative;
+
   margin-bottom: 52px;
+  padding-left: 64px;
 
   font-size: 18px;
   color: #030206;
+}
+
+.section10__location-icon,
+.section10__time-icon,
+.section10__tel-icon,
+.section10__email-icon {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  display: block;
+  width: 25px;
+  height: 34px;
+}
+
+.section10__location-icon {
+  background: url('../images/contacts-icon1.png') no-repeat center;
+}
+
+.section10__time-icon {
+  background: url('../images/contacts-icon2.png') no-repeat center;
+}
+
+.section10__tel-icon {
+  background: url('../images/contacts-icon3.png') no-repeat center;
+}
+
+.section10__email-icon {
+  background: url('../images/contacts-icon4.png') no-repeat center;
 }
 
 .section10__tel {

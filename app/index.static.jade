@@ -84,7 +84,8 @@ body
               .checkbox-wrapper__text-1
                 | Даю согласие на
                 =' '
-                a(href="#")Обработку персональных данных
+                a(href="#")
+                  | Обработку персональных данных
               .checkbox-wrapper__text-2
                 | Ваши данные не будут переданы третьим лицам
           a(href="#").btn.section1__form-btn
@@ -471,33 +472,116 @@ body
         a(href="#").chile
   .popup__phone.hidden
     .overlay
-      .popup__phone-container
-        a(href="#").popup__phone-btn-close
-        .popup__phone-title
+      .popup__container
+        .popup__btn-close
+        .popup__title.popup__phone-title
           | Закажите звонок
-        .popup__phone-text
+        .popup__text.popup__phone-text
           | Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут
         form(action="#" method="#").popup__phone-form
-        input(type="text" name="your-name" placeholder="Имя")
-        input(type="tel" name="your-tel" placeholder="Телефон")
-        .checkbox-wrapper
+          input(type="text" name="phone-name" placeholder="Имя").popup__phone-form-input
+          input(type="tel" name="phone-phone" placeholder="Телефон").popup__phone-form-input
+        label.checkbox-wrapper
           .checkbox-wrapper__checkbox
-            input(type="checkbox" checked)
-            .checkbox
+            input(type="checkbox" checked).section1__form-checkbox
+            .checkbox.popup__checkbox
               span.checkbox__circle
               span.checkbox__yes.checkbox-active
                 | да
-              span.checkbox__no
-                | нет
-          .checkbox-wrapper__text
+          .checkbox-wrapper__text.checkbox-wrapper__text-popup
             .checkbox-wrapper__text-1
               | Даю согласие на
-              a(href="#")Обработку персональных данных
+              =' '
+              a(href="#")
+                | Обработку персональных данных
             .checkbox-wrapper__text-2
               | Ваши данные не будут переданы третьим лицам
-        a(href="#").btn.section1__form-btn
-          | Заказать звоните
-
+        a(href="#").btn.popup__btn
+          | Заказать звонок
+  .popup__ask.hidden
+    .overlay
+      .popup__container
+        .popup__btn-close
+        .popup__title.popup__ask-title
+          | Задайте вопрос
+        .popup__text.popup__ask-text
+          | Если не нашли что искали, Вы можете задать свой вопрос, указав имя и почту. И мы сразу ответим Вам!
+        form(action="#" method="#").popup__phone-form
+          input(type="text" name="ask-name" placeholder="Имя").popup__phone-form-input
+          input(type="email" name="ask-emain" placeholder="E-mail").popup__phone-form-input
+          textarea(name="ask-area").popup__phone-form-textarea
+        label.checkbox-wrapper
+          .checkbox-wrapper__checkbox
+            input(type="checkbox" checked).section1__form-checkbox
+            .checkbox.popup__checkbox
+              span.checkbox__circle
+              span.checkbox__yes.checkbox-active
+                | да
+          .checkbox-wrapper__text.checkbox-wrapper__text-popup
+            .checkbox-wrapper__text-1
+              | Даю согласие на
+              =' '
+              a(href="#")
+                | Обработку персональных данных
+            .checkbox-wrapper__text-2
+              | Ваши данные не будут переданы третьим лицам
+        a(href="#").btn.popup__btn
+          | Задать вопрос
+  .popup__review.hidden
+    .overlay
+      .popup__container
+        .popup__btn-close
+        .popup__title.popup__review-title
+          | Оставьте ваш отзыв
+        .popup__text.popup__review-text
+          | Если Вы воспользовались нашими услугами, напишите отзыв о работе с нами!
+        form(action="#" method="#").popup__phone-form
+          input(type="text" name="review-name" placeholder="Имя").popup__phone-form-input
+          textarea(name="review-area").popup__phone-form-textarea
+        label.checkbox-wrapper
+          .checkbox-wrapper__checkbox
+            input(type="checkbox" checked).section1__form-checkbox
+            .checkbox.popup__checkbox
+              span.checkbox__circle
+              span.checkbox__yes.checkbox-active
+                | да
+          .checkbox-wrapper__text.checkbox-wrapper__text-popup
+            .checkbox-wrapper__text-1
+              | Даю согласие на
+              =' '
+              a(href="#")
+                | Обработку персональных данных
+            .checkbox-wrapper__text-2
+              | Ваши данные не будут переданы третьим лицам
+        a(href="#").btn.popup__btn
+          | Оставить отзыв
+  .popup__phone.popup__success.hidden
+    .overlay
+      .popup__container.popup__success-container
+        .popup__btn-close
+        .popup__success-img
+        .popup__title.popup__success-title
+          | Благодарим за обращение!
+        .popup__text.popup__success-text
+          | Ваши данные отправлены, мы свяжемся с Вами в течении 2 минут
+  .popup__ask.popup__success.hidden
+    .overlay
+      .popup__container.popup__success-container.popup__success-container-ask
+        .popup__btn-close
+        .popup__success-img
+        .popup__title.popup__success-title
+          | Благодарим за обращение!
+        .popup__text.popup__success-text
+          | Ваш вопрос отправлен, мы ответим Вам как только увидим письмо
+  .popup__review.popup__success.hidden
+    .overlay
+      .popup__container.popup__success-container.popup__success-container-review
+        .popup__btn-close
+        .popup__success-img
+        .popup__title.popup__success-title
+          | Благодарим за отзыв!
+        .popup__text.popup__success-text.popup__success-text-review
+          | Нам очень важна обратная связь клиентов. Ваш отзыв будет опубликован!
 
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
