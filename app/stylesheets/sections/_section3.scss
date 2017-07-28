@@ -137,6 +137,56 @@
   font-size: 16px;
 }
 
+.section3-btn-prev {
+  position: relative;
+  z-index: 20;
+
+  width: 29px;
+  height: 29px;
+  padding: 0;
+
+  background: #accc3d;
+
+  border: none;
+  box-shadow: none;
+}
+
+.section3-btn-next {
+  position: relative;
+  z-index: 20;
+
+  width: 50px;
+  height: 29px;
+  width: 29px;
+  padding: 0;
+  background: #accc3d;
+
+  border: none;
+  box-shadow: none;
+}
+
+
+
+.section3-btn-next-arrow {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+
+  width: 8px;
+  height: 14px;
+  background: url(../images/arrow-right.png) no-repeat center;
+}
+
+.section3-btn-prev-arrow {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+
+  width: 8px;
+  height: 14px;
+  background: url(../images/arrow-left.png) no-repeat center;
+}
+
 .section3__counter {
   position: relative;
   margin-right: 30px;

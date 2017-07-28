@@ -4,51 +4,6 @@ import slick from 'slick-carousel'
 
 var mainNavLinks = $('.main-nav li a')
 
-var checkBox1 = $('.section1__form-checkbox');
-checkBox1.change(function() {
-  if(checkBox1.prop('checked')) {
-    $('.checkbox__circle').animate({"left": "23px"}, "fast");
-    $('.checkbox__yes').css("display", "block");
-  } else {
-    $('.checkbox__circle').animate({"left": "0"}, "fast");
-    $('.checkbox__yes').css("display", "none");
-    }
-});
-
-var checkBox2 = $('.popup__phone .section1__form-checkbox');
-checkBox2.change(function() {
-  if(checkBox2.prop('checked')) {
-    $('.popup__phone .checkbox__circle').animate({"left": "23px"}, "fast");
-    $('.popup__phone .checkbox__yes').css("display", "block");
-  } else {
-    $('.popup__phone .checkbox__circle').animate({"left": "0"}, "fast");
-    $('.popup__phone .checkbox__yes').css("display", "none");
-    }
-  console.log('asdasdasd')
-});
-
-var checkBox3 = $('.popup__ask .section1__form-checkbox');
-checkBox3.change(function() {
-  if(checkBox3.prop('checked')) {
-    $('.popup__ask .checkbox__circle').animate({"left": "23px"}, "fast");
-    $('.popup__ask .checkbox__yes').css("display", "block");
-  } else {
-    $('.popup__ask .checkbox__circle').animate({"left": "0"}, "fast");
-    $('.popup__ask .checkbox__yes').css("display", "none");
-    }
-});
-
-var checkBox4 = $('.popup__review .section1__form-checkbox');
-checkBox4.change(function() {
-  if(checkBox4.prop('checked')) {
-    $('.popup__review .checkbox__circle').animate({"left": "23px"}, "fast");
-    $('.popup__review .checkbox__yes').css("display", "block");
-  } else {
-    $('.popup__review .checkbox__circle').animate({"left": "0"}, "fast");
-    $('.popup__review .checkbox__yes').css("display", "none");
-    }
-});
-
 $(document).ready(function($) {
   $('#fullpage').fullpage({
     anchors:['page-1','page-2', 'page-3', 'page-4', 'page-5', 'page-6', 'page-7', 'page-8', 'page-9', 'page-10'],
@@ -107,16 +62,28 @@ $('.page-header__tel-btn').click(function(){
   $('.popup__phone').removeClass('hidden');
 });
 
+$('.section2__form-btn').click(function(){
+  $('.popup__phone').removeClass('hidden');
+});
+
+$('.section5__btn').click(function(){
+  $('.popup__phone').removeClass('hidden');
+});
+
+$('.section7__btn').click(function(){
+  $('.popup__phone').removeClass('hidden');
+});
+
+$('.section8__btn').click(function(){
+  $('.popup__ask').removeClass('hidden');
+});
+
 $('.section9__btn').click(function(){
   $('.popup__review').removeClass('hidden');
 });
 
 $('.section10__btn').click(function(){
   $('.popup__phone').removeClass('hidden');
-});
-
-$('.section8__btn').click(function(){
-  $('.popup__ask').removeClass('hidden');
 });
 
 $('.popup__btn-close').click(function(){
@@ -128,16 +95,6 @@ $('.popup__btn-close').click(function(){
   $('.popup__success-review').addClass('hidden');
   $('.popup__slider').addClass('hidden');
 });
-
-//$('.overlay').click(function(evt){
-//  $('.popup__phone').addClass('hidden');
-//  $('.popup__ask').addClass('hidden');
-//  $('.popup__review').addClass('hidden');
-//  $('.popup__success-phone').addClass('hidden');
-//  $('.popup__success-ask').addClass('hidden');
-//  $('.popup__success-review').addClass('hidden');
-//  $('.popup__slider').addClass('hidden');
-//});
 
 $('.section3__big-slider').slick({
   slidesToShow: 1,
@@ -151,8 +108,10 @@ $('.section3__big-slider').slick({
 $('.section3__min-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
   fade: true,
+  appendArrows: $('.section3-slider__arrows'),
+  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><div class="section3-btn-prev-arrow"></div></button>',
+  nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><div class="section3-btn-next-arrow"></div></button>',
   autoplay: true,
   autoplaySpeed: 2500
 });
@@ -193,3 +152,57 @@ $('.popup__slids').on('beforeChange', function(event, slick, currentSlide, nextS
   $('.popup__slider__counter-big').text('0' + (nextSlide + 1));
 });
 
+var checkBox1 = $('.section1__form-checkbox');
+checkBox1.change(function() {
+  if(checkBox1.prop('checked')) {
+    $('.checkbox__circle').animate({"left": "23px"}, "fast");
+    $('.checkbox__yes').css("display", "block");
+  } else {
+    $('.checkbox__circle').animate({"left": "0"}, "fast");
+    $('.checkbox__yes').css("display", "none");
+    }
+});
+
+var checkBox2 = $('.popup__phone .section1__form-checkbox');
+checkBox2.change(function() {
+  if(checkBox2.prop('checked')) {
+    $('.popup__phone .checkbox__circle').animate({"left": "23px"}, "fast");
+    $('.popup__phone .checkbox__yes').css("display", "block");
+  } else {
+    $('.popup__phone .checkbox__circle').animate({"left": "0"}, "fast");
+    $('.popup__phone .checkbox__yes').css("display", "none");
+    }
+  console.log('asdasdasd')
+});
+
+var checkBox3 = $('.popup__ask .section1__form-checkbox');
+checkBox3.change(function() {
+  if(checkBox3.prop('checked')) {
+    $('.popup__ask .checkbox__circle').animate({"left": "23px"}, "fast");
+    $('.popup__ask .checkbox__yes').css("display", "block");
+  } else {
+    $('.popup__ask .checkbox__circle').animate({"left": "0"}, "fast");
+    $('.popup__ask .checkbox__yes').css("display", "none");
+    }
+});
+
+var checkBox4 = $('.popup__review .section1__form-checkbox');
+checkBox4.change(function() {
+  if(checkBox4.prop('checked')) {
+    $('.popup__review .checkbox__circle').animate({"left": "23px"}, "fast");
+    $('.popup__review .checkbox__yes').css("display", "block");
+  } else {
+    $('.popup__review .checkbox__circle').animate({"left": "0"}, "fast");
+    $('.popup__review .checkbox__yes').css("display", "none");
+    }
+});
+
+//$('.overlay').click(function(evt){
+//  $('.popup__phone').addClass('hidden');
+//  $('.popup__ask').addClass('hidden');
+//  $('.popup__review').addClass('hidden');
+//  $('.popup__success-phone').addClass('hidden');
+//  $('.popup__success-ask').addClass('hidden');
+//  $('.popup__success-review').addClass('hidden');
+//  $('.popup__slider').addClass('hidden');
+//});
