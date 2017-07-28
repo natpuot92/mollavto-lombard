@@ -5,11 +5,58 @@
   display: table;
   padding: 0 3.1%;
   z-index: 20;
+
+  color: #ffffff;
 }
 
 .main-nav {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  max-width: 691px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 145px;
+  padding-left: 150px;
+
+  background: #000000;
+
+  box-shadow: -3.5px 3.5px 13.8px 1.2px rgba(0, 0, 0, 0.4);
 }
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.main-nav__link {
+  font-family: Intro;
+  font-size: 24px;
+  line-height: 3;
+  color: #ffffff;
+}
+
+.main-nav__link:hover {
+  color: #accc3d;
+}
+
+.main-nav__btn-close {
+  position: absolute;
+  top: 32px;
+  right: 59px;
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background: url('../images/main-nav-close-white.png') no-repeat center;
+  background-size: contain;
+
+  cursor: pointer;
+}
+
 
 .opened {
   display: block;
@@ -49,7 +96,6 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
-  color: #ffffff;
 }
 
 .page-header__location {
@@ -95,12 +141,12 @@
 
 .page-header__mail a {
   display: inline-block;
+  color: #ffffff;
 
   font-family: 'Roboto';
   font-size: 14px;
   line-height: 1.29;
   text-align: left;
-  color: #ffffff;
 
   text-decoration: underline;
 }
@@ -114,7 +160,7 @@
   font-weight: 900;
   line-height: 1.33;
   text-align: left;
-  color: #ffffff;
+
 }
 
 .page-header__tel-btn {
@@ -131,7 +177,8 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.71;
-  color: #fefefe;
+  color: #ffffff;
+
   text-align: left;
 
   &:hover {
@@ -148,38 +195,11 @@
 }
 
 .burger {
-  position: relative;
-
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  height: 20px;
   width: 27px;
-  height: 3px;
-
-  border-radius: 1.5px;
-  background-color: #ffffff;
-  &::after {
-    content:"";
-    position: absolute;
-
-    display: block;
-    top: 8px;
-    width: 27px;
-    height: 3px;
-    border-radius: 1.5px;
-    background-color: #ffffff;
-  }
-
-  &::before {
-      content:"";
-      position: absolute;
-
-      display: block;
-      top: -8px;
-      width: 27px;
-      height: 3px;
-      border-radius: 1.5px;
-      background-color: #ffffff;
-    }
+  background: url('../images/burger-white.png') no-repeat center;
+  background-size: contain;
 }
 
 @media (max-width: 1712px){

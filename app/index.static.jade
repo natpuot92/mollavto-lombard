@@ -28,38 +28,39 @@ body
         | Заказать звонок
       .menu-btn
         a(href="#").burger
-    .page-header.main-nav
-      ul
-        li
-          a(href="#page-1")
-            | Home
-        li
-          a(href="#page-2")
-            | процесс получения займа
-        li
-          a(href="#page-3")
-            | Преимущества
-        li
-          a(href="#page-4")
-            | Ставки и условия
-        li
-          a(href="#page-5")
-            | О компании
-        li
-          a(href="#page-6")
-            | Условия займа
-        li
-          a(href="#page-7")
-            | Лицензии и документы
-        li
-          a(href="#page-8")
-            | Часто задаваемые вопросы
-        li
-          a(href="#page-9")
-            | Отзывы клиентов
-        li
-          a(href="#page-10")
-            | Контакты
+  .page-header.main-nav.hidden
+    .main-nav__btn-close
+    ul
+      li
+        a(href="#page-1").main-nav__link
+          | Home
+      li
+        a(href="#page-2").main-nav__link
+          | процесс получения займа
+      li
+        a(href="#page-3").main-nav__link
+          | Преимущества
+      li
+        a(href="#page-4").main-nav__link
+          | Ставки и условия
+      li
+        a(href="#page-5").main-nav__link
+          | О компании
+      li
+        a(href="#page-6").main-nav__link
+          | Условия займа
+      li
+        a(href="#page-7").main-nav__link
+          | Лицензии и документы
+      li
+        a(href="#page-8").main-nav__link
+          | Часто задаваемые вопросы
+      li
+        a(href="#page-9").main-nav__link
+          | Отзывы клиентов
+      li
+        a(href="#page-10").main-nav__link
+          | Контакты
   div#fullpage
     .section.section1
       .container
@@ -75,7 +76,7 @@ body
           input(type="tel" name="your-tel" placeholder="Телефон").section1__form-text.section1__form-tel
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
-              input(type="checkbox" checked).section1__form-checkbox
+              input(type="checkbox").section1__form-checkbox
               .checkbox
                 span.checkbox__circle
                 span.checkbox__yes.checkbox-active
@@ -121,7 +122,7 @@ body
             .section2__item-text
               | Приезжайте
               br.section2__item-text
-              за своими деньгами
+              | за своими деньгами
         .section2__item.section2__item-1
           .section2__item-icon.section2__item-icon-1
           .section2__item-text-wrapper
@@ -130,7 +131,7 @@ body
             .section2__item-text
               | Позвоните или оставьте
               br.section2__item-text
-              номер телефона
+              | номер телефона
         .section2__item.section2__item-2
           .section2__item-icon.section2__item-icon-2
           .section2__item-text-wrapper
@@ -139,7 +140,7 @@ body
             .section2__item-text
               | Узнайте решение
               br.section2__item-text
-              в течение 30 минут
+              | в течение 30 минут
 
     .section.section3
       .container
@@ -169,38 +170,44 @@ body
             .big-slider__slide-circle
             img(src="../images/features-slide5.png").big-slider__slide-foto-5
 
-        .section3__min-slider
-          .min-slider__slide-1
-            .min-slider__icon.min-slider__icon-1
-              img(src="../images/features-icon1.png")
-            .min-slider__text
-              | Не требуем генеральной доверенности и договор купли-продажи
-          .min-slider__slide-2
-            .min-slider__icon.min-slider__icon-2
-              img(src="../images/features-icon2.png")
-            .min-slider__text
-              | Пересчет процентов
-              br.min-slider__text
-              за пользование займом по дням
-          .min-slider__slide-3
-            .min-slider__icon.min-slider__icon-3
-              img(src="../images/features-icon3.png")
-            .min-slider__text
-              | При заключении договора,
-              br.min-slider__text
-              деньги наличными сразу
-          .min-slider__slide-4
-            .min-slider__icon.min-slider__icon-4
-              img(src="../images/features-icon3.png")
-            .min-slider__text
-              | Высокая лояльность к клиентам
-          .min-slider__slide-5
-            .min-slider__icon.min-slider__icon-5
-              img(src="../images/features-icon3.png")
-            .min-slider__text
-              | Работаем официально, состоим
-              br.min-slider__text
-              на учете в ЦБ
+        .section3__slider-counter-wrapper
+          .section3__min-slider
+            .min-slider__slide-1
+              .min-slider__icon.min-slider__icon-1
+                img(src="../images/features-icon1.png")
+              .min-slider__text
+                | Не требуем генеральной доверенности и договор купли-продажи
+            .min-slider__slide-2
+              .min-slider__icon.min-slider__icon-2
+                img(src="../images/features-icon2.png")
+              .min-slider__text
+                | Пересчет процентов
+                br.min-slider__text
+                | за пользование займом по дням
+            .min-slider__slide-3
+              .min-slider__icon.min-slider__icon-3
+                img(src="../images/features-icon3.png")
+              .min-slider__text
+                | При заключении договора,
+                br.min-slider__text
+                | деньги наличными сразу
+            .min-slider__slide-4
+              .min-slider__icon.min-slider__icon-4
+                img(src="../images/features-icon3.png")
+              .min-slider__text
+                | Высокая лояльность к клиентам
+            .min-slider__slide-5
+              .min-slider__icon.min-slider__icon-5
+                img(src="../images/features-icon3.png")
+              .min-slider__text
+                | Работаем официально, состоим
+                br.min-slider__text
+                | на учете в ЦБ
+          .section3__counter
+            span.section3__counter-big
+              | 01
+            =" "
+            span.section3__counter-min
     .section.section4
       .container
         .section__title.section4__title
@@ -253,7 +260,7 @@ body
           div
             | Используйте свой автомобиль с максимальной выгодой для себя и своих близких.
         a(href="#").btn.section5__btn
-          | Получить займм
+          | Получить займ
     .section.section6
       .container
         .section__title.section6__title
@@ -314,7 +321,7 @@ body
         .section7__text
           | Взяв у нас займ, Вы ни чем не рискуете. Мы работаем открыто!
         a(href="#").btn.section7__btn
-          | Получить займм
+          | Получить займ
         .section7__license-wrapper
           .section7__license.section7__license-1
           .section7__license.section7__license-2
@@ -425,7 +432,6 @@ body
             | 01
           =" "
           span.section9__counter-min
-            |  05
           .section9__slider-controls
             .section9__slider-control-left
               | Назад
@@ -473,7 +479,7 @@ body
   .popup__phone.hidden
     .overlay
       .popup__container
-        .popup__btn-close
+        .popup__btn-close.popup__btn-close-phone
         .popup__title.popup__phone-title
           | Закажите звонок
         .popup__text.popup__phone-text
@@ -483,7 +489,7 @@ body
           input(type="tel" name="phone-phone" placeholder="Телефон").popup__phone-form-input
         label.checkbox-wrapper
           .checkbox-wrapper__checkbox
-            input(type="checkbox" checked).section1__form-checkbox
+            input(type="checkbox").section1__form-checkbox
             .checkbox.popup__checkbox
               span.checkbox__circle
               span.checkbox__yes.checkbox-active
@@ -501,7 +507,7 @@ body
   .popup__ask.hidden
     .overlay
       .popup__container
-        .popup__btn-close
+        .popup__btn-close.popup__btn-close-ask
         .popup__title.popup__ask-title
           | Задайте вопрос
         .popup__text.popup__ask-text
@@ -512,7 +518,7 @@ body
           textarea(name="ask-area").popup__phone-form-textarea
         label.checkbox-wrapper
           .checkbox-wrapper__checkbox
-            input(type="checkbox" checked).section1__form-checkbox
+            input(type="checkbox").section1__form-checkbox
             .checkbox.popup__checkbox
               span.checkbox__circle
               span.checkbox__yes.checkbox-active
@@ -530,7 +536,7 @@ body
   .popup__review.hidden
     .overlay
       .popup__container
-        .popup__btn-close
+        .popup__btn-close.popup__btn-close-review
         .popup__title.popup__review-title
           | Оставьте ваш отзыв
         .popup__text.popup__review-text
@@ -555,33 +561,128 @@ body
               | Ваши данные не будут переданы третьим лицам
         a(href="#").btn.popup__btn
           | Оставить отзыв
-  .popup__phone.popup__success.hidden
+  .popup__success-phone.hidden
     .overlay
       .popup__container.popup__success-container
-        .popup__btn-close
+        .popup__btn-close.popup__btn-close-success-phone
         .popup__success-img
         .popup__title.popup__success-title
           | Благодарим за обращение!
         .popup__text.popup__success-text
           | Ваши данные отправлены, мы свяжемся с Вами в течении 2 минут
-  .popup__ask.popup__success.hidden
+  .popup__success-ask.hidden
     .overlay
       .popup__container.popup__success-container.popup__success-container-ask
-        .popup__btn-close
+        .popup__btn-close.popup__btn-close-success-ask
         .popup__success-img
         .popup__title.popup__success-title
           | Благодарим за обращение!
         .popup__text.popup__success-text
           | Ваш вопрос отправлен, мы ответим Вам как только увидим письмо
-  .popup__review.popup__success.hidden
+  .popup__success-review.hidden
     .overlay
       .popup__container.popup__success-container.popup__success-container-review
-        .popup__btn-close
+        .popup__btn-close.popup__btn-close-success-review
         .popup__success-img
         .popup__title.popup__success-title
           | Благодарим за отзыв!
         .popup__text.popup__success-text.popup__success-text-review
           | Нам очень важна обратная связь клиентов. Ваш отзыв будет опубликован!
+  .popup__slider.hidden
+    .overlay
+      .popup__container.popup__container-slider
+        .popup__btn-close.popup__btn-close-slider
+        .popup__slids
+          .popup__slid.popup__slid-1
+            .popup__slider-title
+              | 1. Сколько денег я получу за свой автомобиль (процент от стоимости авто)?
+            .popup__slider-text
+              | текст
+          .popup__slid.popup__slid-2
+            .popup__slider-title
+              | 2. Если на руках дубликат ПТС (потерян ПТС, кончилось место в ПТС т.д.)?
+            .popup__slider-text
+              | текст2
+          .popup__slid.popup__slid-3
+            .popup__slider-title
+              | 3. Как быстро я смогу получить ПТС после оплаты займа?
+            .popup__slider-text
+              | текст3
+          .popup__slid.popup__slid-4
+            .popup__slider-title
+              | 4. Нужно ли приезжать в офис на автомобиле? Что, если автомобиль не на ходу?
+            .popup__slider-text
+              | текст4
+          .popup__slid.popup__slid-5
+            .popup__slider-title
+              | 5. Нужно ли оформлять на Молл-Авто ломбард генеральную доверенность?
+            .popup__slider-text
+              | текст5
+          .popup__slid.popup__slid-6
+            .popup__slider-title
+              | 6. Нужно ли выезжать еще куда-то для заключения договора?
+            .popup__slider-text
+              | текст6
+          .popup__slid.popup__slid-7
+            .popup__slider-title
+              | 7. Что будет при просрочке платежей?
+            .popup__slider-text
+              | Мы всегда стараемся быть лояльными к нашим клиентам, поэтому, хотя при просрочке платежа и начисляются пени в размере 1,5% в день, в большинстве случаев мы решаем проблему с клиентом индивидуально и не накладываем штрафы. Бонусом сможет стать то, что вы предупредите заранее о том, что не сможете произвести платеж в назначенное время. А что бы исключить начисление пени можете поставить автомобиль на нашу охраняемую
+          .popup__slid.popup__slid-8
+            .popup__slider-title
+              | 8. При просрочке платежей смогут забрать мое авто?
+            .popup__slider-text
+              | текст8
+          .popup__slid.popup__slid-9
+            .popup__slider-title
+              | 9. Если долго не вносить платежи (месяц, два) или нет денег для того, чтобы вносить платежи регулярно, что будет?
+            .popup__slider-text
+              | текст9
+          .popup__slid.popup__slid-10
+            .popup__slider-title
+              | 10. Какие документы могут быть необходимы для получения заёмных денег под ПТС?
+            .popup__slider-text
+              | текст10
+          .popup__slid.popup__slid-11
+            .popup__slider-title
+              | 11. Если я использую автомобиль по доверенности, могу ли я получить деньги, заложив ПТС?
+            .popup__slider-text
+              | текст11
+          .popup__slid.popup__slid-12
+            .popup__slider-title
+              | 12. Автомобиль взят в кредит, ПТС находится в банке. Можно ли в таком случае взять займ?
+            .popup__slider-text
+              | текст12
+          .popup__slid.popup__slid-13
+            .popup__slider-title
+              | 13. После оплаты суммы займа возникают ли скрытые проценты?
+            .popup__slider-text
+              | текст13
+          .popup__slid.popup__slid-14
+            .popup__slider-title
+              | 14. Ставится ли какая-либо отметка о залоге в ПТС?
+            .popup__slider-text
+              | текст14
+          .popup__slid.popup__slid-15
+            .popup__slider-title
+              | 15. Какие документы после заключения сделки останутся в Молл-Автоломбард?
+            .popup__slider-text
+              | текст15
+          .popup__slid.popup__slid-16
+            .popup__slider-title
+              | 16. У меня нет второго комплекта ключей?
+            .popup__slider-text
+              | текст16
+          .popup__slid.popup__slid-17
+            .popup__slider-title
+              | 17. Я могу получить займ если на автомобиль наложен арест или запрет на регистрационные действия?
+            .popup__slider-text
+              | текст17
+        .popup__slider__counter
+          span.popup__slider__counter-big
+            | 01
+          =" "
+          span.popup__slider__counter-min
 
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")

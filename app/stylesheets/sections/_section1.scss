@@ -54,6 +54,8 @@
   margin-bottom: 25px;
   padding-left: 17px;
 
+  color: #ffffff;
+
   border-radius: 5px;
   background: none;
   border: solid 1px #ffffff;
@@ -82,7 +84,8 @@
 
 .checkbox__circle {
   position: absolute;
-  left: 23px;
+  left: 0;
+  z-index: 20;
 
   display: inline-block;
   width: 20px;
@@ -99,7 +102,10 @@
 
 span.checkbox__yes {
   position: absolute;
+  z-index: 10;
+
   left: 5px;
+  display: none;
 }
 
 .checkbox-wrapper {

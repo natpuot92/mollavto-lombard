@@ -183,3 +183,66 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.popup__container-slider {
+  padding-top: 70px;
+}
+
+.popup__slids {
+  min-height: 170px;
+  max-width: 584px;
+  width: 100%;
+
+  margin-bottom: 45px;
+}
+
+.popup__slider-title {
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.popup__slider-text {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+.popup__slider__counter {
+  position: relative;
+  margin-right: 30px;
+
+  display: inline-block;
+
+}
+
+.popup__slider__counter-big {
+  font-family: Intro;
+  font-size: 72px;
+   color: #7f7f7f;
+}
+
+.popup__slider__counter-min {
+  position: absolute;
+  right: -60px;
+  bottom: 35px;
+
+  font-family: Intro;
+  font-size: 36.2px;
+  color: #b2b2b2;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 8px;
+
+    display: block;
+    width: 5px;
+    height: 26px;
+    opacity: 0.3;
+    background-color: #c9c9c9;
+  }
+}
