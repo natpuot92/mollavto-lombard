@@ -155,8 +155,6 @@ $('.popup__slids').slick({
   nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'
 });
 
-
-
 $('.popup__slider__counter-min').text($('.popup__slid').length);
 
 $('.popup__slids').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -187,7 +185,6 @@ checkBox2.change(function() {
     $('.popup__phone .checkbox__circle').animate({"left": "0"}, "fast");
     $('.popup__phone .checkbox__yes').css("display", "none");
     }
-  console.log('asdasdasd')
 });
 
 var checkBox3 = $('.popup__ask .section1__form-checkbox');
@@ -212,12 +209,15 @@ checkBox4.change(function() {
     }
 });
 
-//$('.overlay').click(function(evt){
-//  $('.popup__phone').addClass('hidden');
-//  $('.popup__ask').addClass('hidden');
-//  $('.popup__review').addClass('hidden');
-//  $('.popup__success-phone').addClass('hidden');
-//  $('.popup__success-ask').addClass('hidden');
-//  $('.popup__success-review').addClass('hidden');
-//  $('.popup__slider').addClass('hidden');
-//});
+//$('.section8__ask')
+
+
+var element = $('.button-go-to');
+
+element.click(function() {
+    $('.popup__slids').slick('slickGoTo', '3');
+})
+
+
+
+
