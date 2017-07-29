@@ -27,3 +27,18 @@ a {
 .slick-list {
   overflow: visible;
 }
+
+.slick-slide {
+    &:focus, a {
+      outline: none;
+    }
+  }
+
+#prev:focus {
+  outline: none;
+}
+
+#next:focus {
+  outline: none;
+}
+

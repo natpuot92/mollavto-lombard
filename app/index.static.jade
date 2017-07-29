@@ -433,11 +433,7 @@ body
             | 01
           =" "
           span.section9__counter-min
-          .section9__slider-controls
-            .section9__slider-control-left
-              | Назад
-            .section9__slider-control-right
-              | вперед
+          .section9-slider__arrows
         a(href="#").btn.section9__btn
             | Оставить отзыв
     .section.section10
@@ -589,7 +585,7 @@ body
           | Благодарим за отзыв!
         .popup__text.popup__success-text.popup__success-text-review
           | Нам очень важна обратная связь клиентов. Ваш отзыв будет опубликован!
-  .popup__slider.hidden
+  .popup__slider
     .overlay
       .popup__container.popup__container-slider
         .popup__btn-close.popup__btn-close-slider
@@ -684,6 +680,7 @@ body
             | 01
           =" "
           span.popup__slider__counter-min
+        .popup-slider__arrows
 
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")

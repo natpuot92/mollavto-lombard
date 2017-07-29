@@ -102,7 +102,9 @@ $('.section3__big-slider').slick({
   arrows: false,
   fade: true,
   autoplay: true,
-  autoplaySpeed: 2500
+  autoplaySpeed: 3000,
+  asNavFor: '.section3__min-slider',
+  focusOnSelect: false
 });
 
 $('.section3__min-slider').slick({
@@ -110,10 +112,11 @@ $('.section3__min-slider').slick({
   slidesToScroll: 1,
   fade: true,
   appendArrows: $('.section3-slider__arrows'),
-  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><div class="section3-btn-prev-arrow"></div></button>',
-  nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><div class="section3-btn-next-arrow"></div></button>',
+  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
+  nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>',
   autoplay: true,
-  autoplaySpeed: 2500
+  autoplaySpeed: 3000,
+  asNavFor: '.section3__big-slider'
 });
 
 $('.section3__counter-min').text('0' + ($('.section3__big-slider .big-slider__slide').length));
@@ -125,10 +128,13 @@ $('.section3__big-slider').on('beforeChange', function(event, slick, currentSlid
 $('.section9__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
   fade: true,
+  appendArrows: $('.section9-slider__arrows'),
+  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
+  nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>',
   autoplay: true,
-  autoplaySpeed: 2500
+  autoplaySpeed: 3000,
+  pauseOnHover: true,
 });
 
 $('.section9__counter-min').text('0' + ($('.section9__slide').length));
@@ -140,16 +146,23 @@ $('.section9__slider').on('beforeChange', function(event, slick, currentSlide, n
 $('.popup__slids').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
   fade: true,
-  autoplay: false,
-  autoplaySpeed: 2500
+  pauseOnHover: true,
+  appendArrows: $('.popup-slider__arrows'),
+  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text popup__slider-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
+  nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'
 });
+
+
 
 $('.popup__slider__counter-min').text($('.popup__slid').length);
 
 $('.popup__slids').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  $('.popup__slider__counter-big').text('0' + (nextSlide + 1));
+  if ((nextSlide + 1) < 10) {
+    $('.popup__slider__counter-big').text('0' + (nextSlide + 1));
+  } else {
+     $('.popup__slider__counter-big').text(nextSlide + 1);
+  }
 });
 
 var checkBox1 = $('.section1__form-checkbox');

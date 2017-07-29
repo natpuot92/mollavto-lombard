@@ -193,7 +193,7 @@
   max-width: 584px;
   width: 100%;
 
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .popup__slider-title {
@@ -213,6 +213,7 @@
 .popup__slider__counter {
   position: relative;
   margin-right: 30px;
+  margin-bottom: 50px;
 
   display: inline-block;
 
@@ -245,4 +246,12 @@
     opacity: 0.3;
     background-color: #c9c9c9;
   }
+}
+
+.popup__slider-prev-text {
+  color: #000000;
+}
+
+.popup__slider-next-text {
+  color: #000000;
 }
