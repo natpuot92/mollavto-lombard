@@ -1,6 +1,7 @@
 import $ from "jquery"
 import fullpage from 'fullpage.js'
 import slick from 'slick-carousel'
+import fancybox from 'fancybox'
 
 var mainNavLinks = $('.main-nav li a')
 
@@ -19,7 +20,7 @@ $(document).ready(function($) {
         $('.burger').css('background', 'url("../images/burger-white.png")');
         $('.main-nav li a').css('color', '#ffffff');
         $('.main-nav__btn-close').css('background', 'url("../images/main-nav-close-white.png")');
-        $('.main-nav').css('background', '#000000');
+        $('.main-nav__blur').css('background', 'rgba(0,0,0,0.8)');
 
         for (var i = 0; mainNavLinks.length > i; i++) {
           mainNavLinks[i].addEventListener('mouseenter', function(evt) {
@@ -37,7 +38,7 @@ $(document).ready(function($) {
         $('.burger').css('background', 'url("../images/burger-black.png")');
         $('.main-nav li a').css('color', '#000000');
         $('.main-nav__btn-close').css('background', 'url("../images/main-nav-close-black.png")');
-        $('.main-nav').css('background', '#ffffff');
+        $('.main-nav__blur').css('background', 'rgba(255,255,255,0.8)');
 
         for (var i = 0; mainNavLinks.length > i; i++) {
           mainNavLinks[i].addEventListener('mouseenter', function(evt) {
@@ -54,10 +55,12 @@ $(document).ready(function($) {
 
 $('.main-nav__btn-close').click(function() {
   $('.main-nav').addClass('hidden');
+  $('.main-nav__blur').addClass('hidden');
 });
 
 $('.burger').click(function(){
   $('.main-nav').removeClass('hidden');
+  $('.main-nav__blur').removeClass('hidden');
 });
 
 $('.page-header__tel-btn').click(function(){
@@ -151,8 +154,8 @@ $('.popup__slids').slick({
   fade: true,
   pauseOnHover: true,
   appendArrows: $('.popup-slider__arrows'),
-  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text popup__slider-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
-  nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'
+  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev popup-slider-prev"><span class = "section3-btn-prev-text popup__slider-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
+  nextArrow: '<button id="next" type="button" class="btn section3-btn-next popup-slider-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'
 });
 
 $('.popup__slider__counter-min').text($('.popup__slid').length);
@@ -209,15 +212,28 @@ checkBox4.change(function() {
     }
 });
 
-//$('.section8__ask')
+var askElements = $('.section8__ask');
 
+askElements.each(function(i, element) {
+  $(element).click(function(evt) {
+    evt.preventDefault();
+    var slideNumber = $(evt.target).attr('data-slide');
 
-var element = $('.button-go-to');
+    $('.popup__slider').removeClass('hidden');
 
-element.click(function() {
-    $('.popup__slids').slick('slickGoTo', '3');
-})
+    $('.popup__slids').slick('slickGoTo', slideNumber);
 
+  });
+});
+
+$("a[rel=lightbox-group]").fancybox({
+                'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
 
 
 

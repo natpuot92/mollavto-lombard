@@ -61,6 +61,11 @@
   border: solid 1px #ffffff;
 }
 
+.section1__form-text:focus {
+  outline: none;
+  border: solid 1px #accc3d;
+}
+
 .section1__form-tel {
   margin-bottom: 37px;
 }

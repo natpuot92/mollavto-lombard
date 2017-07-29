@@ -123,7 +123,11 @@
   border-radius: 5px;
   background: none;
   border: solid 1px #888888;
+}
 
+.popup__phone-form-input:focus {
+  outline: none;
+  border: solid 1px #accc3d;
 }
 
 .popup__btn {
@@ -142,6 +146,11 @@
   border-radius: 5px;
   background: none;
   border: solid 1px #888888;
+}
+
+.popup__phone-form-textarea:focus {
+  outline: none;
+  border: solid 1px #accc3d;
 }
 
 .popup__success-img  {
@@ -254,6 +263,14 @@
 
 .popup__slider-next-text {
   color: #000000;
+}
+
+.popup-slider-prev:hover {
+  background: #e1e1e1;
+}
+
+.popup-slider-next:hover {
+  background: #e1e1e1;
 }
 
 .button-go-to {

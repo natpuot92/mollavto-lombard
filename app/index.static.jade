@@ -28,6 +28,7 @@ body
         | Заказать звонок
       .menu-btn
         a(href="#").burger
+  .main-nav__blur.hidden
   .page-header.main-nav.hidden
     .main-nav__btn-close
     ul
@@ -324,54 +325,62 @@ body
         a(href="#").btn.section7__btn
           | Получить займ
         .section7__license-wrapper
-          .section7__license.section7__license-1
-          .section7__license.section7__license-2
-          .section7__license.section7__license-3
-          .section7__license.section7__license-4
-          .section7__license.section7__license-5
-          .section7__license.section7__license-6
-          .section7__license.section7__license-7
-          .section7__license.section7__license-8
+          a(href = "./images/license-1.png" rel = "lightbox-group")
+            img(src = "./images/license-1.png")
+          a(href = "./images/license-2.png" rel = "lightbox-group")
+            img(src = "./images/license-2.png")
+          a(href = "./images/license-3.png" rel = "lightbox-group")
+            img(src = "./images/license-3.png")
+          a(href = "./images/license-4.png" rel = "lightbox-group")
+            img(src = "./images/license-4.png")
+          a(href = "./images/license-5.png" rel = "lightbox-group")
+            img(src = "./images/license-5.png")
+          a(href = "./images/license-6.png" rel = "lightbox-group")
+            img(src = "./images/license-6.png")
+          a(href = "./images/license-7.png" rel = "lightbox-group")
+            img(src = "./images/license-7.png")
+          a(href = "./images/license-8-b.jpg" rel = "lightbox-group")
+            img(src = "./images/license-8.png")
     .section.section8
       .container.section8-container
         .section__title.section8__title
           | часто задаваемые вопросы
         .section8__ask-wrapper
           .section8__ask-wrapper-1
-            a(href="#").section8__ask.section8__ask-1
+            a(href="#").section8__ask.section8__ask-1(data-slide = '0')
               | 1. Сколько денег я получу за свой автомобиль (процент от стоимости авто)?
-            a(href="#").section8__ask.section8__ask-2
+            a(href="#").section8__ask.section8__ask-2(data-slide = '1')
               | 2. Если на руках дубликат ПТС (потерян ПТС, кончилось место в ПТС т.д.)?
-            a(href="#").section8__ask.section8__ask-3
+            a(href="#").section8__ask.section8__ask-3(data-slide = '2')
               | 3. Как быстро я смогу получить ПТС после оплаты займа?
-            a(href="#").section8__ask.section8__ask-4
+            a(href="#").section8__ask.section8__ask-4(data-slide = '3')
               | 4. Нужно ли приезжать в офис на автомобиле? Что, если автомобиль не на ходу?
-            a(href="#").section8__ask.section8__ask-5
+            a(href="#").section8__ask.section8__ask-5(data-slide = '4')
               | 5. Нужно ли оформлять на Молл-Авто ломбард генеральную доверенность?
-            a(href="#").section8__ask.section8__ask-6
+            a(href="#").section8__ask.section8__ask-6(data-slide = '5')
               | 6. Нужно ли выезжать еще куда-то для заключения договора?
-            a(href="#").section8__ask.section8__ask-7
+            a(href="#").section8__ask.section8__ask-7(data-slide = '6')
               | 7. Что будет при просрочке платежей?
-            a(href="#").section8__ask.section8__ask-8
+            a(href="#").section8__ask.section8__ask-8(data-slide = '7')
               | 8. При просрочке платежей смогут забрать мое авто?
-            a(href="#").section8__ask.section8__ask-9
+            a(href="#").section8__ask.section8__ask-9(data-slide = '8')
               | 9. Если долго не вносить платежи (месяц, два) или нет денег для того, чтобы вносить платежи регулярно, что будет?
           .section8__ask-wrapper-2
-            a(href="#").section8__ask.section8__ask-10
+            a(href="#").section8__ask.section8__ask-10(data-slide = '9')
               | 10. Какие документы могут быть необходимы для получения заёмных денег под ПТС?
-            a(href="#").section8__ask.section8__ask-11
+            a(href="#").section8__ask.section8__ask-11(data-slide = '10')
               | 11. Если я использую автомобиль по доверенности, могу ли я получить деньги, заложив ПТС?
-            a(href="#").section8__ask.section8__ask-12
+            a(href="#").section8__ask.section8__ask-12(data-slide = '11')
               | 12. Автомобиль взят в кредит, ПТС находится в банке. Можно ли в таком случае взять займ?
-            a(href="#").section8__ask.section8__ask-13
+            a(href="#").section8__ask.section8__ask-13(data-slide = '12')
               | 13. После оплаты суммы займа возникают ли скрытые проценты?
-            a(href="#").section8__ask.section8__ask-14
+            a(href="#").section8__ask.section8__ask-14(data-slide = '13')
               | 14. Ставится ли какая-либо отметка о залоге в ПТС?
-            a(href="#").section8__ask.section8__ask-15
+            a(href="#").section8__ask.section8__ask-15(data-slide = '14')
               | 15. Какие документы после заключения сделки останутся в Молл-Автоломбард?
-            a(href="#").section8__ask.section8__ask-16
+            a(href="#").section8__ask.section8__ask-16(data-slide = '15')
               | 16. У меня нет второго комплекта ключей?
-            a(href="#").section8__ask.section8__ask-17
+            a(href="#").section8__ask.section8__ask-17(data-slide = '16')
               | 17. Я могу получить займ если на автомобиль наложен арест или запрет на регистрационные действия?
         .section8__your-ask
           .section8__your-ask-text
@@ -585,11 +594,10 @@ body
           | Благодарим за отзыв!
         .popup__text.popup__success-text.popup__success-text-review
           | Нам очень важна обратная связь клиентов. Ваш отзыв будет опубликован!
-  .popup__slider
+  .popup__slider.hidden
     .overlay
       .popup__container.popup__container-slider
         .popup__btn-close.popup__btn-close-slider
-        .button-go-to
         .popup__slids
           .popup__slid.popup__slid-1
             .popup__slider-title
