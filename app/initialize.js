@@ -19,6 +19,7 @@ $(document).ready(function($) {
         $('.burger').css('background', 'url("../images/burger-white.png")');
         $('.main-nav li a').css('color', '#ffffff');
         $('.main-nav__btn-close').css('background', 'url("../images/main-nav-close-white.png")');
+        $('.main-nav').css('background', '#000000');
 
         for (var i = 0; mainNavLinks.length > i; i++) {
           mainNavLinks[i].addEventListener('mouseenter', function(evt) {
@@ -36,6 +37,7 @@ $(document).ready(function($) {
         $('.burger').css('background', 'url("../images/burger-black.png")');
         $('.main-nav li a').css('color', '#000000');
         $('.main-nav__btn-close').css('background', 'url("../images/main-nav-close-black.png")');
+        $('.main-nav').css('background', '#ffffff');
 
         for (var i = 0; mainNavLinks.length > i; i++) {
           mainNavLinks[i].addEventListener('mouseenter', function(evt) {

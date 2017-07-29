@@ -185,3 +185,188 @@ span.checkbox__yes {
   max-width: 220px;
   padding-left: 20px;
 }
+
+@media (max-width: 1368px) {
+
+  .section__title {
+  position: relative;
+  margin-bottom: 75px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -44px;
+    display: block;
+    width: 91px;
+    height: 7px;
+
+    background: url('../images/green-line.svg') no-repeat center;
+    background-size: contain;
+    background-position: -6px;
+  }
+}
+
+
+  .section1__title1 {
+    font-family: Intro;
+    font-size: 50px;
+    margin-bottom: 17px;
+
+    color: #fff;
+  }
+
+  .section1__title2 {
+    font-family: Intro;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .section1__text {
+    max-width: 557px;
+    margin-bottom: 33px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.67;
+    font-weight: normal;
+  }
+
+  .section1__form-text {
+    display: block;
+    width: 405px;
+    height: 30px;
+    margin-bottom: 21px;
+    padding-left: 14px;
+
+    color: #ffffff;
+
+    border-radius: 5px;
+    background: none;
+    border: solid 1px #ffffff;
+  }
+
+  .section1__form-tel {
+    margin-bottom: 37px;
+  }
+
+  .section1__form-checkbox {
+    display: none;
+  }
+
+  .checkbox {
+    position: relative;
+    top: 3px;
+
+    width: 43px;
+    height: 20px;
+
+    background: #ffffff;
+
+    border-radius: 9.5px;
+    cursor: pointer;
+  }
+
+  .checkbox__circle {
+    position: absolute;
+    left: 0;
+    z-index: 20;
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 9.5px;
+    background-color: #accc3d;
+  }
+
+  .checkbox span {
+    color: #141414;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  span.checkbox__yes {
+    position: absolute;
+    z-index: 10;
+
+    left: 5px;
+    display: none;
+  }
+
+  .checkbox-wrapper {
+    display: block;
+    margin-bottom: 36px;
+
+    vertical-align: top;
+  }
+
+  .checkbox-wrapper__checkbox {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 19px;
+  }
+
+  .checkbox-wrapper__text {
+    display: inline-block;
+
+    vertical-align: top;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 2;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .checkbox-wrapper__text-1 a {
+    color: #accc3d;
+  }
+
+  .section1__form-btn {
+    margin-bottom: 130px;
+  }
+
+  .section1__features-item {
+    display: inline-block;
+
+    max-width: 275px;
+    width: 100%;
+    margin-right: 10.5%;
+
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .section1__features-item:last-child {
+    margin-right: 0;
+  }
+
+  .section1__features-item-icon {
+    display: table-cell;
+    vertical-align: middle;
+
+    width: 45px;
+    height: 49px;
+    margin-right: 25px;
+  }
+
+  .section1__features-item-icon-1 {
+    background: url('../images/money.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .section1__features-item-icon-2 {
+    background: url('../images/percent.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .section1__features-item-icon-3 {
+    background: url('../images/document.png') no-repeat center;
+    background-size: contain;
+  }
+
+  .section1__features-item-text {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 220px;
+    padding-left: 20px;
+  }
+}
