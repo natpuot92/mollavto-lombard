@@ -13,6 +13,11 @@
   }
 }
 
+.section7__license-wrapper {
+  max-width: 1000px;
+  width: 100%;
+}
+
 .section7__text {
   margin-bottom: 64px;
 
@@ -25,7 +30,7 @@
   margin-bottom: 80px;
 }
 
-.section7__license {
+.funcybox-section7 {
   display: inline-block;
   vertical-align: top;
   width: 147px;
@@ -35,6 +40,5 @@
 
   cursor: pointer;
 
-  background: url('../images/license.png') no-repeat center;
   background-size: contain;
 }

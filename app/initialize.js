@@ -5,6 +5,7 @@ import fancybox from 'fancybox'
 
 var mainNavLinks = $('.main-nav li a')
 
+
 $(document).ready(function($) {
   $('#fullpage').fullpage({
     anchors:['page-1','page-2', 'page-3', 'page-4', 'page-5', 'page-6', 'page-7', 'page-8', 'page-9', 'page-10'],
@@ -148,15 +149,16 @@ $('.section9__slider').on('beforeChange', function(event, slick, currentSlide, n
   $('.section9__counter-big').text('0' + (nextSlide + 1));
 });
 
-$('.popup__slids').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: true,
-  pauseOnHover: true,
-  appendArrows: $('.popup-slider__arrows'),
-  prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev popup-slider-prev"><span class = "section3-btn-prev-text popup__slider-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
-  nextArrow: '<button id="next" type="button" class="btn section3-btn-next popup-slider-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'
-});
+  $('.popup__slids').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    pauseOnHover: true,
+    appendArrows: $('.popup-slider__arrows'),
+    prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev popup-slider-prev"><span class = "section3-btn-prev-text popup__slider-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
+    nextArrow: '<button id="next" type="button" class="btn section3-btn-next popup-slider-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'
+  });
+
 
 $('.popup__slider__counter-min').text($('.popup__slid').length);
 
@@ -217,6 +219,7 @@ var askElements = $('.section8__ask');
 askElements.each(function(i, element) {
   $(element).click(function(evt) {
     evt.preventDefault();
+
     var slideNumber = $(evt.target).attr('data-slide');
 
     $('.popup__slider').removeClass('hidden');
@@ -226,14 +229,22 @@ askElements.each(function(i, element) {
   });
 });
 
-$("a[rel=lightbox-group]").fancybox({
-                'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
+fancybox($);
+
+$(document).ready(function() {
+ $("a[rel=lightbox-group]").fancybox({
+   helpers:  {
+    overlay : {
+      css : {
+        'background' : 'rgba(255,255,255,0.5)'
+      }
+    }
+  }
+  });
+});
+
+
+
 
 
 
