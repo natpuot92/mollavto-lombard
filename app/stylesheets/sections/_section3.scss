@@ -252,3 +252,302 @@
     background-color: #ffffff;
   }
 }
+
+@media (max-width: 1368px) {
+  .section__title.section3-title {
+    margin-bottom: 53px;
+    font-size: 34px;
+    &::after {
+      bottom: -31px;
+    }
+  }
+
+  .section3__text {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .section3__big-slider {
+    position: relative;
+
+    display: inline-block;
+
+    z-index: 10;
+    max-width: 595px;
+    width: 100%;
+    min-height: 400px;
+    height: 400px;
+  }
+
+  .big-slider__slide-foto {
+    z-index: 10;
+  }
+
+  .big-slider__slide-foto-1 {
+    top: 10px;
+    width: 403px;
+    height: 380px;
+
+  }
+
+  .big-slider__slide-foto-2 {
+    top: 20px;
+    left: -90px;
+
+    width: 503px;
+    height: 400px;
+  }
+
+  .big-slider__slide-foto-3 {
+    top: 35px;
+    left: -20px;
+
+    width: 455px;
+    height: 370px;
+  }
+
+  .big-slider__slide-foto-4 {
+    left: -160px;
+
+    width: 705px;
+    height: 410px;
+
+  }
+
+  .big-slider__slide-foto-5 {
+    top: 20px;
+    left: 40px;
+
+    width: 314px;
+    height: 380px;
+  }
+
+  .big-slider__slide-circle {
+    position: absolute;
+
+    z-index: 1;
+
+    width: 419px;
+    height: 419px;
+    border: 45px solid rgba(79, 87, 100, 0.5);
+    border-radius: 50%;
+  }
+
+  .big-slider__slide-foto-4-img {
+    top: 88px;
+    left: 33px;
+
+    width: 410px;
+    height: 241px;
+  }
+
+  .min-slider__icon {
+    margin-bottom: 23px;
+  }
+
+  .section3__counter {
+    margin-bottom: 20px;
+  }
+
+  .section3__min-slider {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section3__big-slider {
+    max-width: 535px;
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 873px) {
+
+  .section3 {
+    padding-bottom: 30px;
+  }
+
+  .section3__big-slider {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .big-slider__slide-circle {
+    left: 37px;
+  }
+
+  .big-slider__slide-foto-1 {
+    left: 50px;
+  }
+
+  .big-slider__slide-foto-2 {
+    top: 20px;
+    left: -49px;
+
+    width: 503px;
+    height: 400px;
+  }
+
+  .big-slider__slide-foto-3 {
+    top: 35px;
+    left: 20px;
+
+    width: 455px;
+    height: 370px;
+  }
+
+  .big-slider__slide-foto-4 {
+    left: -150px;
+
+    width: 705px;
+    height: 410px;
+
+  }
+
+  .big-slider__slide-foto-5 {
+    top: 20px;
+    left: 80px;
+
+    width: 314px;
+    height: 380px;
+  }
+
+  .section3__slider-counter-wrapper {
+    max-width: 100%;
+
+  }
+
+  .section3__min-slider {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .min-slider__icon {
+    margin: 0 auto;
+  }
+
+  .min-slider__text {
+    text-align: center;
+  }
+
+  .min-slider__slide-foto-1 {
+    margin: 0 auto;
+  }
+
+  .min-slider__slide-foto-2 {
+     margin: 0 auto;
+  }
+
+  .section3__counter {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .section3__counter-big {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  .section3__counter-min {
+    right: 50%;
+    transform: translateX(110px);
+  }
+
+  .section3-slider__arrows {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .big-slider__slide-foto-4-img {
+    top: 88px;
+    left: 43px;
+
+    width: 410px;
+    height: 241px;
+  }
+}
+
+@media (max-width: 590px) {
+
+  .big-slider__slide-foto-4 {
+    left: -140px;
+
+    width: 680px;
+    height: 400px;
+
+  }
+
+
+  .big-slider__slide-foto-4-img {
+    top: 88px;
+    left: 26px;
+
+    width: 435px;
+    height: 235px;
+  }
+}
+
+@media (max-width: 590px) {
+
+  .section3__big-slider {
+    min-height: 300px;
+    height: 300px;
+
+    width: 290px;
+  }
+
+  .big-slider__slide {
+    height: 350px;
+  }
+
+  .big-slider__slide-foto-1 {
+    left: 0;
+    width: 275px;
+    height: 300px;
+  }
+
+  .big-slider__slide-foto-2 {
+    width: 320px;
+    height: 280px;
+  }
+  .big-slider__slide-foto-3 {
+    top: 20px;
+    left: -10px;
+    width: 330px;
+    height: 295px;
+  }
+
+  .big-slider__slide-foto-4 {
+    left: -110px;
+    width: 460px;
+    height: 290px;
+  }
+
+  .big-slider__slide-foto-5 {
+    left: 20px;
+    width: 235px;
+    height: 260px;
+  }
+
+  .big-slider__slide-circle {
+    left: 0;
+
+    width: 290px;
+    height: 290px;
+
+    border: 30px solid rgba(79, 87, 100, 0.5);;
+  }
+
+  .big-slider__slide-foto-4-img {
+    top: 25px;
+    left: 21px;
+    width: 257px;
+    height: 249px;
+  }
+
+}

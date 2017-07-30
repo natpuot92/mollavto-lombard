@@ -42,3 +42,49 @@
 
   background-size: contain;
 }
+
+@media (max-width: 1368px) {
+  .section7__title {
+    margin-bottom: 45px;
+    color: #fff;
+
+    &::after {
+      bottom: -27px;
+    }
+  }
+
+  .section7__text {
+    margin-bottom: 25px;
+  }
+
+  .section7__btn {
+    margin-bottom: 30px;
+  }
+
+  .section7__license-wrapper {
+    max-width: 700px;
+  }
+
+  .funcybox-section7 {
+    height: 160px;
+    width: 110px;
+    margin-bottom: 30px;
+  }
+
+  .funcybox-section7 img {
+    height: 160px;
+    width: 110px;
+  }
+}
+
+@media (max-width: 1368px) {
+  .funcybox-section7 {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 350px) {
+  .funcybox-section7:nth-child(2n) {
+    margin-right: 0;
+  }
+}
