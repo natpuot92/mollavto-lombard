@@ -236,6 +236,8 @@
   width: 27px;
   background: url('../images/burger-white.png') no-repeat center;
   background-size: contain;
+
+  transition: background-image .7s;
 }
 
 @media (max-width: 1712px){
