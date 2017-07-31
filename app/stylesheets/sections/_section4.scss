@@ -94,6 +94,12 @@
    background: url('../images/passport4.png') no-repeat center;
 }
 
+@media (max-width: 1440px) {
+  .section4__percent {
+    margin-bottom: 80px;
+  }
+}
+
 @media (max-width: 1368px) {
   .section__title {
     font-size: 36px;

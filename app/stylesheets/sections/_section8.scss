@@ -84,6 +84,25 @@
   color: #030206;
 }
 
+@media (max-width: 1440px) {
+  .section8__title {
+    margin-bottom: 60px;
+
+    &::after {
+    bottom: -28px;
+    }
+
+  }
+
+  .section8__ask-wrapper {
+    margin-bottom: 35px;
+  }
+
+  .section8__ask {
+    margin-bottom: 14px;
+  }
+}
+
 @media (max-width: 1368px) {
 
   .section8-container {

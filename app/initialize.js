@@ -268,8 +268,7 @@ $("#section1__form").validate({
     return true;
   },
   submitHandler: function(form) {
-    console.log($(form));
-    $('.popup__success-phone').removeClass('hidden');
+
   }
 })
 

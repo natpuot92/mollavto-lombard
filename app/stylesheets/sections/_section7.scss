@@ -77,6 +77,27 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .section7__title {
+    margin-bottom: 55px;
+  }
+
+  .section7__text {
+    margin-bottom: 54px;
+  }
+
+  .section7__btn {
+    margin-bottom: 65px;
+  }
+
+  .funcybox-section7 {
+    width: 130px;
+    height: 190px;
+    margin-bottom: 58px;
+  }
+
+}
+
 @media (max-width: 1368px) {
   .funcybox-section7 {
     margin-right: 50px;
