@@ -13,6 +13,8 @@
   line-height: 1.33;
   color: #030206;
 
+  transition-duration: .3s;
+
   &:hover {
     box-shadow: 0 4px 0 0 #63771e, inset 0 -8px 40px 0 #63771e;
   }

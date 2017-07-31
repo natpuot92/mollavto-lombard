@@ -148,23 +148,28 @@
 }
 
 .social-links__google {
+  transition-duration: .3s;
   background: url('../images/social-icons-google.png') no-repeat center;
 }
 
 .social-links__mail {
+  transition-duration: .3s;
   background: url('../images/social-icons-mail.png') no-repeat center;
 }
 
 .social-links__facebook {
+  transition-duration: .3s;
   background: url('../images/social-icons-facebook.png') no-repeat center;
 }
 
 .social-links__vk {
+  transition-duration: .3s;
   background: url('../images/social-icons-vk.png') no-repeat center;
 
 }
 
 .social-links__twitter {
+  transition-duration: .3s;
   background: url('../images/social-icons-twitter.png') no-repeat center;
 }
 
@@ -196,6 +201,7 @@
   float: right;
   height: 41px;
   width: 62px;
+  transition-duration: .3s;
   background: url(../images/chile-logo.png) no-repeat center;
 }
 

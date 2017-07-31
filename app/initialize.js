@@ -23,8 +23,8 @@ $(document).ready(function($) {
         $('.burger').css('background-image', 'url("../images/burger-white.png")');
         $('.page-header__logo').css('background-size', 'contain');
         $('.main-nav li a').css('color', '#ffffff');
-        $('.main-nav__btn-close').css('background', 'url("../images/main-nav-close-white.png")');
-        $('.main-nav__blur').css('background', 'rgba(0,0,0,0.8)');
+        $('.main-nav__btn-close').css('background-image', 'url("../images/main-nav-close-white.png")');
+        $('.main-nav__blur').css('background-color', 'rgba(0,0,0,0.8)');
 
         for (var i = 0; mainNavLinks.length > i; i++) {
           mainNavLinks[i].addEventListener('mouseenter', function(evt) {
@@ -44,7 +44,7 @@ $(document).ready(function($) {
         $('.burger').css('background-image', 'url("../images/burger-black.png")');
         $('.main-nav li a').css('color', '#000000');
         $('.main-nav__btn-close').css('background-image', 'url("../images/main-nav-close-black.png")');
-        $('.main-nav__blur').css('background', 'rgba(255,255,255,0.8)');
+        $('.main-nav__blur').css('background-color', 'rgba(255,255,255,0.8)');
 
         for (var i = 0; mainNavLinks.length > i; i++) {
           mainNavLinks[i].addEventListener('mouseenter', function(evt) {
@@ -182,7 +182,7 @@ checkBox1.change(function() {
     $('.checkbox__yes').css("display", "block");
   } else {
     $('.checkbox__circle').animate({"left": "0"}, "fast");
-    $('.checkbox__yes').css("display", "none");
+    $('.checkbox__yes').animate("display", "block");
     }
 });
 
