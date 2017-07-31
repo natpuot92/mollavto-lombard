@@ -16,6 +16,7 @@
     "fullpage.js": "^2.9.4",
     "jaded-brunch": "^2.2.3",
     "jquery": "^2.2.2",
+    "jquery-validation": "^1.17.0",
     "postcss-brunch": "^0.5.0",
     "postcss-flexbugs-fixes": "^2.0.0",
     "postcss-flexibility": "^1.0.3",

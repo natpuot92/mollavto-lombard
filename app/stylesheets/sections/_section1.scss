@@ -65,11 +65,15 @@
   background: none;
   border: solid 1px #ffffff;
 
-  transition-duration: .2s;
+  transition-duration: .3s;
+}
+
+.section1__form-text.error {
+  border: solid 1px #d24a43;
 }
 
 .section1__form-text:focus {
-  outline: none;
+
   border: solid 1px #accc3d;
 }
 
@@ -83,7 +87,11 @@
 }
 
 .section1__form-checkbox {
-  display: none;
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+
 }
 
 .checkbox {

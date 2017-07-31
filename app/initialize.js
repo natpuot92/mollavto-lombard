@@ -1,7 +1,8 @@
-import $ from "jquery"
+import $ from 'jquery'
 import fullpage from 'fullpage.js'
 import slick from 'slick-carousel'
 import fancybox from 'fancybox'
+import validation from 'jquery-validation'
 
 var mainNavLinks = $('.main-nav li a')
 
@@ -234,6 +235,7 @@ askElements.each(function(i, element) {
   });
 });
 
+
 fancybox($);
 
 $(document).ready(function() {
@@ -249,7 +251,80 @@ $(document).ready(function() {
 });
 
 
+$("#section1__form").validate({
+  rules: {
+    your__name: {
+    required: true
+  },
+    your__tel: {
+      required: true,
+      digits: true
+  },
+    section1__checkbox: {
+      required: true
+  }
+  },
+  errorPlacement: function(error, element) {
+    return true;
+  },
+  submitHandler: function(form) {
+    console.log($(form));
+    $('.popup__success-phone').removeClass('hidden');
+  }
+})
 
+$("#popup__phone-form").validate({
+  rules: {
+    phone__name: {
+    required: true
+  },
+    phone__tel: {
+      required: true,
+      digits: true
+    },
+    popup__phone__checkbox: {
+      required: true
+    }
+  },
+  errorPlacement: function(error, element) {
+    return true;
+  }
+})
 
+$("#popup__ask-form").validate({
+  rules: {
+    ask__name: {
+    required: true
+  },
+    ask__email: {
+      required: true,
+      email: true
+    },
+    ask__area: {
+    required: true,
+    },
+    popup__ask__checkbox: {
+      required: true
+    }
+  },
+  errorPlacement: function(error, element) {
+    return true;
+  }
+})
 
-
+$("#popup__review-form").validate({
+  rules: {
+    review__name: {
+    required: true
+  },
+    review__area: {
+      required: true,
+    },
+   popup__review__checkbox: {
+      required: true
+    }
+  },
+  errorPlacement: function(error, element) {
+    return true;
+  }
+})

@@ -72,12 +72,12 @@ body
             | Автомобиль остается у Вас
         .section1__text
           | Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут
-        form(action="#" method="#").section1__form
-          input(type="text" name="your-name" placeholder="Имя").section1__form-text
-          input(type="tel" name="your-tel" placeholder="Телефон").section1__form-text.section1__form-tel
+        form(action="#" method="#" id = "section1__form").section1__form
+          input(type="text" name="your__name" placeholder="Имя").section1__form-text
+          input(type="tel" name="your__tel" placeholder="Телефон").section1__form-text.section1__form-tel
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
-              input(type="checkbox").section1__form-checkbox
+              input(type="checkbox" name = "section1__checkbox").section1__form-checkbox
               .checkbox
                 span.checkbox__circle
                 span.checkbox__yes.checkbox-active
@@ -91,7 +91,7 @@ body
                   = ' '
               span.checkbox-wrapper__text-2
                 | Ваши данные не будут переданы третьим лицам
-          a(href="#").btn.section1__form-btn
+          button(type="submit").btn.section1__form-btn
             | Звоните
         .section1__features
           .section1__features-item
@@ -510,26 +510,26 @@ body
           | Закажите звонок
         .popup__text.popup__phone-text
           | Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут
-        form(action="#" method="#").popup__phone-form
-          input(type="text" name="phone-name" placeholder="Имя").popup__phone-form-input
-          input(type="tel" name="phone-phone" placeholder="Телефон").popup__phone-form-input
-        label.checkbox-wrapper
-          .checkbox-wrapper__checkbox
-            input(type="checkbox").section1__form-checkbox
-            .checkbox.popup__checkbox
-              span.checkbox__circle
-              span.checkbox__yes.checkbox-active
-                | да
-          .checkbox-wrapper__text.checkbox-wrapper__text-popup
-            .checkbox-wrapper__text-1
-              | Даю согласие на
-              =' '
-              a(href="#")
-                | Обработку персональных данных
-            .checkbox-wrapper__text-2
-              | Ваши данные не будут переданы третьим лицам
-        a(href="#").btn.popup__btn
-          | Заказать звонок
+        form(action="#" method="#" id = "popup__phone-form").popup__phone-form
+          input(type="text" name="phone__name" placeholder="Имя").popup__phone-form-input
+          input(type="tel" name="phone__tel" placeholder="Телефон").popup__phone-form-input
+          label.checkbox-wrapper
+            .checkbox-wrapper__checkbox
+              input(type="checkbox" id = "popup__phone__checkbox" name = "popup__phone__checkbox").section1__form-checkbox
+              .checkbox.popup__checkbox
+                span.checkbox__circle
+                span.checkbox__yes.checkbox-active
+                  | да
+            .checkbox-wrapper__text.checkbox-wrapper__text-popup
+              .checkbox-wrapper__text-1
+                | Даю согласие на
+                =' '
+                a(href="#")
+                  | Обработку персональных данных
+              .checkbox-wrapper__text-2
+                | Ваши данные не будут переданы третьим лицам
+          button(type="submit").btn.popup__btn
+            | Заказать звонок
   .popup__ask.hidden
     .overlay
       .popup__container
@@ -538,28 +538,28 @@ body
           | Задайте вопрос
         .popup__text.popup__ask-text
           | Если не нашли что искали, Вы можете задать свой вопрос, указав имя и почту. И мы сразу ответим Вам!
-        form(action="#" method="#").popup__phone-form
-          input(type="text" name="ask-name" placeholder="Имя").popup__phone-form-input
-          input(type="email" name="ask-emain" placeholder="E-mail").popup__phone-form-input
-          textarea(name="ask-area").popup__phone-form-textarea
-        label.checkbox-wrapper
-          .checkbox-wrapper__checkbox
-            input(type="checkbox").section1__form-checkbox
-            .checkbox.popup__checkbox
-              span.checkbox__circle
-              span.checkbox__yes.checkbox-active
-                | да
-          .checkbox-wrapper__text.checkbox-wrapper__text-popup
-            .checkbox-wrapper__text-1
-              | Даю согласие на
-              =' '
-              a(href="#")
-                | Обработку персональных данных
-            .checkbox-wrapper__text-2
-              | Ваши данные не будут переданы третьим лицам
-        a(href="#").btn.popup__btn
-          | Задать вопрос
-  .popup__review.hidden
+        form(action="#" method="#" id = "popup__ask-form").popup__phone-form
+          input(type="text" name="ask__name" placeholder="Имя").popup__phone-form-input
+          input(type="email" name="ask__email" placeholder="E-mail").popup__phone-form-input
+          textarea(name="ask__area").popup__phone-form-textarea
+          label.checkbox-wrapper
+            .checkbox-wrapper__checkbox
+              input(type="checkbox" id = "popup__ask__checkbox" name = "popup__ask__checkbox").section1__form-checkbox
+              .checkbox.popup__checkbox
+                span.checkbox__circle
+                span.checkbox__yes.checkbox-active
+                  | да
+            .checkbox-wrapper__text.checkbox-wrapper__text-popup
+              .checkbox-wrapper__text-1
+                | Даю согласие на
+                =' '
+                a(href="#")
+                  | Обработку персональных данных
+              .checkbox-wrapper__text-2
+                | Ваши данные не будут переданы третьим лицам
+          button(type="submit")(href="#").btn.popup__btn
+            | Задать вопрос
+  .popup__review
     .overlay
       .popup__container
         .popup__btn-close.popup__btn-close-review
@@ -567,26 +567,26 @@ body
           | Оставьте ваш отзыв
         .popup__text.popup__review-text
           | Если Вы воспользовались нашими услугами, напишите отзыв о работе с нами!
-        form(action="#" method="#").popup__phone-form
-          input(type="text" name="review-name" placeholder="Имя").popup__phone-form-input
-          textarea(name="review-area").popup__phone-form-textarea
-        label.checkbox-wrapper
-          .checkbox-wrapper__checkbox
-            input(type="checkbox" checked).section1__form-checkbox
-            .checkbox.popup__checkbox
-              span.checkbox__circle
-              span.checkbox__yes.checkbox-active
-                | да
-          .checkbox-wrapper__text.checkbox-wrapper__text-popup
-            .checkbox-wrapper__text-1
-              | Даю согласие на
-              =' '
-              a(href="#")
-                | Обработку персональных данных
-            .checkbox-wrapper__text-2
-              | Ваши данные не будут переданы третьим лицам
-        a(href="#").btn.popup__btn
-          | Оставить отзыв
+        form(action="#" method="#" id = "popup__review-form").popup__phone-form
+          input(type="text" name="review__name" placeholder="Имя").popup__phone-form-input
+          textarea(name="review__area").popup__phone-form-textarea
+          label.checkbox-wrapper
+            .checkbox-wrapper__checkbox
+              input(type="checkbox" id = "popup__review__checkbox" name = "popup__review__checkbox").section1__form-checkbox
+              .checkbox.popup__checkbox
+                span.checkbox__circle
+                span.checkbox__yes.checkbox-active
+                  | да
+            .checkbox-wrapper__text.checkbox-wrapper__text-popup
+              .checkbox-wrapper__text-1
+                | Даю согласие на
+                =' '
+                a(href="#")
+                  | Обработку персональных данных
+              .checkbox-wrapper__text-2
+                | Ваши данные не будут переданы третьим лицам
+          button(type="submit").btn.popup__btn
+            | Оставить отзыв
   .popup__success-phone.hidden
     .overlay
       .popup__container.popup__success-container
