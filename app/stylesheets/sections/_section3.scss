@@ -1,4 +1,6 @@
 .section3 {
+  overflow: hidden;
+
   background: url('../images/2-background.jpg') no-repeat center;
   background-size: cover;
 }
@@ -362,8 +364,13 @@
   }
 }
 
-@media (max-width: 873px) {
+@media (max-width: 960px) {
+  .section3 {
+    padding-bottom: 40px;
+  }
+}
 
+@media (max-width: 875px) {
   .section3 {
     padding-bottom: 30px;
   }

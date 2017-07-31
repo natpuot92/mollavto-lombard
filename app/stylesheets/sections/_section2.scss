@@ -265,7 +265,13 @@
     &::after{
      display: none;
   }
+  }
 }
+
+@media (max-width: 960px) {
+  .section2 {
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 939px) {

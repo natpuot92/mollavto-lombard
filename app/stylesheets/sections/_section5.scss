@@ -31,3 +31,9 @@
 .section5__text div {
   margin-bottom: 26px;
 }
+
+@media (max-width: 960px) {
+  .section5 {
+    padding-bottom: 40px;
+  }
+}

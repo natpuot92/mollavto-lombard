@@ -1,3 +1,7 @@
+.section {
+  overflow: hidden;
+}
+
 .section1 {
   font-family: Roboto;
   color: #ffffff;
@@ -148,7 +152,7 @@ span.checkbox__yes {
 }
 
 .section1__form-btn {
-  margin-bottom: 130px;
+  margin-bottom: 70px;
 }
 
 .section1__features-item {
@@ -300,6 +304,12 @@ span.checkbox__yes {
 }
 
 @media (max-width: 960px) {
+  @media (max-width: 960px) {
+    .section1 {
+      padding-bottom: 40px;
+    }
+  }
+
   .section1__features-item {
     margin-bottom: 18px;
     margin-right: 2%;

@@ -278,3 +278,74 @@
   height: 50px;
   background: black;
 }
+
+@media (max-width: 800px) {
+  .popup__phone {
+    padding: 10px;
+  }
+
+  .popup__container {
+    top: 40px;
+    max-width: 95%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 654px) {
+  .popup__phone {
+    padding: 10px;
+  }
+
+  .popup__container {
+    top: 20px;
+    max-width: 97%;
+    padding: 60px 13px 10px 20px;
+  }
+
+  .popup__success-container-ask {
+    min-height: 500px;
+  }
+
+  .popup__success-container-review {
+    min-height: 500px;
+  }
+
+  .popup__container-slider {
+    min-height: 500px;
+  }
+
+  .popup__slider__counter {
+    margin-bottom: 10px;
+  }
+
+  .popup__slider-text {
+    line-height: 20px;
+  }
+
+  .popup__phone-title {
+    margin-bottom: 10px;
+  }
+
+  .popup__text {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .checkbox-wrapper__text-1 {
+    line-height: 1.4;
+  }
+
+  .checkbox-wrapper__text-2 {
+    line-height: 1.4;
+  }
+}
+
+
+@media (max-width: 490px) {
+
+  .popup__success-img {
+    width: 99%;
+  }
+}

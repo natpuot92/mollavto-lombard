@@ -94,10 +94,10 @@
 
 
   display: block;
-  width: 943px;
-  height: 771px;
+  width: 49.1%;
+  height: 80vh;
 
-  background: url('../images/map.jpg') no-repeat center;
+  background: url('../images/map.jpg') no-repeat right;
   background-size: contain;
 }
 
@@ -145,7 +145,6 @@
   vertical-align: middle;
   width: 26px;
   height: 19px;
-
 }
 
 .social-links__google {
@@ -202,4 +201,145 @@
 
 .chile:hover {
   background: url(../images/chile-logo-hover.png) no-repeat center;
+}
+
+.section10__footer-wrapper .social-links {
+  display: none;
+}
+
+.section10__footer-wrapper .chile{
+  display: none;
+}
+
+@media (max-width: 1368px) {
+  .section10__title {
+    margin-bottom: 50px;
+    &::after {
+      bottom: -33px;
+    }
+  }
+  .section10__text {
+    margin-bottom: 22px;
+  }
+
+  .section10__btn {
+    margin-bottom: 64px;
+  }
+
+  .section10__location,
+  .section10__time,
+  .section10__tel,
+  .section10__email {
+    margin-bottom: 42px;
+  }
+
+  .section10__map {
+    top: 80px;
+  }
+
+  .section10__footer {
+    min-height: 39px;
+    height: 51px;
+  }
+
+  .section10__footer-wrapper {
+    width: 48%;
+  }
+
+  .section10__footer-copyright {
+    margin-right: 15%;
+  }
+
+  .social-links {
+    padding-left: 8%;
+  }
+}
+
+  @media (max-width: 857px) {
+    .section10__map {
+      display: none;
+    }
+
+    .social-links {
+      padding-left: 0;
+    }
+  }
+
+@media (max-width: 760px) {
+  .section9__slider {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .section9__slide-wrapper {
+    padding: 20px;
+  }
+
+  .section9__slide-text-wrapper {
+    min-height: 30vh;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .section9__slide-icon {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .section9__slide-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .social-links a {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 619px) {
+  .section10__footer {
+    position: relative;
+    min-height: 100px;
+    height: 100px;
+  }
+
+  .section10__footer-wrapper {
+    margin-right: 0;
+  }
+
+  .section10__wrapper-desc {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+ .chile{
+    display: none;
+  }
+
+  .section10__footer-wrapper .social-links {
+    display: block;
+  }
+
+  .section10__footer-wrapper .section10__footer-person-data {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .section10__footer-wrapper .chile{
+    display: block;
+    float: none;
+
+    margin-top: 45px;
+  }
+
+  .section10__footer-copyright {
+    margin-bottom: 10px;
+  }
+
 }

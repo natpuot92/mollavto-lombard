@@ -1,4 +1,7 @@
 .section9 {
+  padding-bottom: 10px;
+  overflow: hidden;
+
   background: url('../images/5-background.jpg') no-repeat center;
   background-size: cover;
   color: #fff;
@@ -122,5 +125,132 @@
     height: 26px;
     opacity: 0.3;
     background-color: #ffffff;
+  }
+}
+
+@media (max-width: 1368px) {
+  .section9__title {
+    margin-bottom: 55px;
+
+    &::after {
+      bottom: -27px;
+    }
+  }
+
+  .section9__slider {
+    max-width: 710px;
+    margin-bottom: 30px;
+  }
+
+  .section9__slide-wrapper {
+    min-height: 332px;
+  }
+
+  .section9__slide-wrapper {
+    padding-left: 44px;
+  }
+
+  .section9__slide-text-wrapper {
+    max-width: 470px;
+    width: 100%;
+  }
+
+  .section9__slide-title {
+    margin-bottom: 14px;
+  }
+
+  .section9__slide-icon {
+    margin-right: 35px;
+  }
+
+  .section9__counter {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1074px) {
+  .section9__slider {
+    max-width: 700px;
+    margin-right: 10px;
+  }
+
+  .section3-btn-next-text {
+    display: block;
+  }
+
+  .section3-btn-prev-text {
+    display: block;
+  }
+
+  .section3-btn-prev {
+    margin-right: 179px;
+  }
+}
+
+@media (max-width: 998px) {
+  .section3-btn-prev {
+    margin-right: 139px;
+  }
+
+  .section3-btn-prev-text {
+    right: -55px
+  }
+
+  .section3-btn-next-text {
+    left: -61px
+  }
+}
+
+@media (max-width: 960px) {
+  .section9 {
+    padding-bottom: 40px;
+  }
+
+  .section9__slider {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .section9__counter {
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .section9-slider__arrows {
+    bottom: -50px;
+    left: -75px;
+  }
+
+  .section3-btn-next-text {
+    display: block;
+  }
+
+  .section3-btn-prev-text {
+    display: block;
+  }
+
+  .section3-btn-prev {
+    margin-right: 179px;
+  }
+
+  .section3-btn-prev-text {
+    right: -73px
+  }
+
+  .section3-btn-next-text {
+    left: -74px
+  }
+
+  .section9__counter {
+    margin-bottom: 80px;
+  }
+
+  .section9__btn {
+    display: block;
+    width: 218px;
+    margin: 0 auto;
   }
 }

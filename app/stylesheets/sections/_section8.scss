@@ -1,3 +1,7 @@
+.section8 {
+  padding-bottom: 10px;
+}
+
 .section8-container {
   position: relative;
 
@@ -97,6 +101,7 @@
 
   .section8__ask-wrapper {
     padding-left: 20px;
+    margin-bottom: 5px;
   }
 
   .section8__ask-wrapper {
@@ -143,7 +148,7 @@
 @media (max-width: 960px) {
 
   .section8 {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 
   .section8-container {

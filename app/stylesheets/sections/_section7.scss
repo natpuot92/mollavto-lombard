@@ -83,6 +83,12 @@
   }
 }
 
+@media (max-width: 960px) {
+  .section7 {
+    padding-bottom: 40px;
+  }
+}
+
 @media (max-width: 350px) {
   .funcybox-section7:nth-child(2n) {
     margin-right: 0;
