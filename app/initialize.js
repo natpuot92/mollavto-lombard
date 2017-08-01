@@ -3,6 +3,7 @@ import fullpage from 'fullpage.js'
 import slick from 'slick-carousel'
 import fancybox from 'fancybox'
 import validation from 'jquery-validation'
+import htmlToCanvas from 'html2canvas'
 
 var mainNavLinks = $('.main-nav li a')
 
@@ -67,9 +68,12 @@ $(document).ready(function($) {
       }
     }
   });
+
+  
 });
 
 $('.main-nav__btn-close').click(function() {
+  //$('#contain').remove();
   $('.main-nav').addClass('hidden');
   $('.main-nav__blur').addClass('hidden');
 });

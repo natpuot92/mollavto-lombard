@@ -30,6 +30,23 @@
 
 }
 
+#contain {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36.9%;
+  height: 100%;
+  overflow: hidden;
+  filter: blur(5px);
+  z-index: 31;
+
+  canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 .main-nav__blur {
   z-index: 30;
 
