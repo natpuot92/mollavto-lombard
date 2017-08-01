@@ -10,7 +10,7 @@ head
 body
   header.page-header
     .page-header__logo-wrapper
-      a(href="#").page-header__logo.page-header__logo-bg
+      a(href="#page-1").page-header__logo.page-header__logo-bg
     .page-header__location-time-wrapper
       .page-header__location
         span
@@ -28,7 +28,6 @@ body
         | Заказать звонок
       .menu-btn
         a(href="#").burger
-  .main-nav__blur.hidden
   .page-header.main-nav.hidden
     .main-nav__btn-close
     ul
@@ -62,8 +61,9 @@ body
       li
         a(href="#page-10").main-nav__link
           | Контакты
+    //- .main-nav__blur
   div#fullpage
-    .section.section1
+    .section.section1#section-1
       .container
         .section__title.section1-title
           .section1__title1
@@ -107,7 +107,7 @@ body
             .section1__features-item-text
               | Не требуются доверенность или договор купли-продажи
 
-    .section.section2
+    .section.section2#section-2
       .container
         .section2__container-wrapper
           .section2__title-wrapper
@@ -155,7 +155,7 @@ body
                     br.section2__item-text
                     | за своими деньгами
 
-    .section.section3
+    .section.section3#section-3
       .container
         .section__title.section3-title
           | преимущества
@@ -222,7 +222,7 @@ body
             =" "
             span.section3__counter-min
           .section3-slider__arrows
-    .section.section4
+    .section.section4#section-4
       .container
         .section__title.section4__title
           | ставки, условия
@@ -260,7 +260,7 @@ body
                 | Комплект ключей
                 br.section__passport-text-br
                 | и брелоков
-    .section.section5
+    .section.section5#section-5
       .container
         .section__title.section5__title
           | о компании
@@ -275,7 +275,7 @@ body
             | Используйте свой автомобиль с максимальной выгодой для себя и своих близких.
         a(href="#").btn.section5__btn
           | Получить займ
-    .section.section6
+    .section.section6#section-6
       .container
         .section__title.section6__title
           | условия займа
@@ -328,7 +328,7 @@ body
               .section__passport-icon.section4__passport-icon-4
               .section__passport-text
                 | Комплект ключей и брелоков
-    .section.section7
+    .section.section7#section-7
       .container
         .section__title.section7__title
           | лицензии и документы
@@ -353,7 +353,7 @@ body
             img(src = "images/license-7.png")
           a(href = "./images/license-8-b.jpg" rel = "lightbox-group").funcybox-section7
             img(src = "images/license-8.png")
-    .section.section8
+    .section.section8#section-8
       .container.section8-container
         .section__title.section8__title
           | часто задаваемые вопросы
@@ -401,7 +401,7 @@ body
             | Вы можете задать свой вопрос
           a(href="#").btn.section8__btn
             | Задать вопрос
-    .section.section9
+    .section.section9#section-9
       .container
         .section__title.section9__title
           | отзывы клиентов о работе с нами
@@ -457,7 +457,7 @@ body
           .section9-slider__arrows
         a(href="#").btn.section9__btn
             | Оставить отзыв
-    .section.section10
+    .section.section10#section-10
       .container.section10__container
         .section10__wrapper-desc
           .section__title.section10__title

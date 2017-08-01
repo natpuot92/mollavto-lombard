@@ -3,6 +3,7 @@ import fullpage from 'fullpage.js'
 import slick from 'slick-carousel'
 import fancybox from 'fancybox'
 import validation from 'jquery-validation'
+import htmlToCanvas from 'html2canvas'
 
 var mainNavLinks = $('.main-nav li a')
 
@@ -58,16 +59,33 @@ $(document).ready(function($) {
       }
     }
   });
+
+  
 });
 
 $('.main-nav__btn-close').click(function() {
+  //$('#contain').remove();
   $('.main-nav').addClass('hidden');
   $('.main-nav__blur').addClass('hidden');
 });
 
 $('.burger').click(function(){
-  $('.main-nav').removeClass('hidden');
-  $('.main-nav__blur').removeClass('hidden');
+
+  const url = window.location.href.split('/');
+  const currentSection = url[url.length - 1] !== '#' ? 
+    `#section-${url[url.length - 1].split('-')[1]}`
+    : '#section-1';
+  
+  console.log(currentSection)
+  
+  htmlToCanvas(document.querySelector(currentSection), {
+    onrendered: function (canvas) {
+        document.body.appendChild(canvas);
+        $('canvas').wrap('<div id="contain" />');
+        $('.main-nav').removeClass('hidden');
+        $('.main-nav__blur').removeClass('hidden');
+    }
+  })
 });
 
 $('.page-header__tel-btn').click(function(){
