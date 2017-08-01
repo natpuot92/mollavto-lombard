@@ -200,3 +200,23 @@
   }
 }
 
+@media (max-width: 500px) {
+  .section8__title {
+    font-size: 24px;
+  }
+
+  .section8__text {
+    font-size: 18px;
+  }
+
+  .section8__your-ask-text {
+    text-align: center;
+  }
+
+  .section8__btn {
+    margin-left: 50%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }
+}
+

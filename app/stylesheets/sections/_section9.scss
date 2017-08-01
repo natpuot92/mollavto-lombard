@@ -254,3 +254,9 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 500px) {
+  .section9__title {
+    font-size: 24px;
+  }
+}

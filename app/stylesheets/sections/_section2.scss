@@ -379,3 +379,21 @@
   }
 
 }
+
+@media (max-width: 500px) {
+  .section2__title {
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  .section2__text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .section2__form-btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+}

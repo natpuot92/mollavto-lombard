@@ -82,6 +82,17 @@ textarea.error {
   }
 }
 
+@media (max-width: 500px) {
+  .section__title {
+    text-align: center;
+
+    &::after {
+      left: 50% !important;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 @media (max-width: 960px) {
   .container {
     //overflow: hidden;

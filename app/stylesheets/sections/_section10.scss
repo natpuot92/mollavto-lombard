@@ -349,3 +349,51 @@
   }
 
 }
+
+@media (max-width: 500px) {
+  .section10__title {
+    font-size: 24px;
+  }
+
+  .section10__text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .section10__location {
+    font-size: 16px;
+  }
+  .section10__time {
+    font-size: 16px;
+  }
+  .section10__tel {
+    font-size: 16px;
+  }
+  .section10__email {
+    font-size: 16px;
+  }
+
+  .section10__footer {
+    height: initial;
+    padding: 0 20px;
+    text-align: center;
+
+    &-copyright {
+      margin: 10px auto;
+    }
+  }
+
+  .section10__btn {
+    margin-left: 50%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }
+
+  .chile {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+}
