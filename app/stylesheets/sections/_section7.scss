@@ -5,11 +5,14 @@
 }
 
 .section7__title {
-  margin-bottom: 65px;
   color: #fff;
+  margin-bottom: 50px;
+
+  font-family: Intro;
+  font-size: 34px;
 
   &::after {
-    bottom: -34px;
+    bottom: -30px;
   }
 }
 
@@ -34,13 +37,17 @@
   display: inline-block;
   vertical-align: top;
   width: 147px;
-  height: 208px;
-  margin-right: 86px;
+  margin-right: 30px;
   margin-bottom: 68px;
 
   cursor: pointer;
 
   background-size: contain;
+
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -49,17 +56,16 @@
   }
 
   .section7__text {
-    margin-bottom: 54px;
+    margin-bottom: 30px;
   }
 
   .section7__btn {
-    margin-bottom: 65px;
+    margin-bottom: 40px;
   }
 
   .funcybox-section7 {
-    width: 130px;
-    height: 190px;
-    margin-bottom: 58px;
+    width: 120px;
+    margin-bottom: 30px;
   }
 
 }
