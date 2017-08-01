@@ -27,6 +27,11 @@ $(document).ready(function($) {
         $('.main-nav__btn-close').css('background-image', 'url("./images/main-nav-close-white.png")');
         $('.main-nav__blur').css('background-color', 'rgba(0,0,0,0.8)');
 
+        if ($(document).width() < 961) {
+          $('.page-header').css('background-color', 'rgba(0, 0, 0, 0.5)');
+        }
+
+
         for (var i = 0; mainNavLinks.length > i; i++) {
           mainNavLinks[i].addEventListener('mouseenter', function(evt) {
             evt.target.style.color = '#accc3d';
@@ -46,6 +51,10 @@ $(document).ready(function($) {
         $('.main-nav li a').css('color', '#000000');
         $('.main-nav__btn-close').css('background-image', 'url("./images/main-nav-close-black.png")');
         $('.main-nav__blur').css('background-color', 'rgba(255,255,255,0.8)');
+
+        if ($(document).width() < 961) {
+          $('.page-header').css('background-color', 'rgba(255, 255, 255, 0.5)');
+        }
 
         for (var i = 0; mainNavLinks.length > i; i++) {
           mainNavLinks[i].addEventListener('mouseenter', function(evt) {
