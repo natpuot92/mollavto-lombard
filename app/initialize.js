@@ -183,7 +183,7 @@ checkBox1.change(function() {
     $('.checkbox__yes').css("display", "block");
   } else {
     $('.checkbox__circle').animate({"left": "0"}, "fast");
-    $('.checkbox__yes').animate("display", "block");
+    $('.checkbox__yes').css("display", "none");
     }
 });
 
