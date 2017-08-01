@@ -70,22 +70,8 @@ $('.main-nav__btn-close').click(function() {
 });
 
 $('.burger').click(function(){
-
-  const url = window.location.href.split('/');
-  const currentSection = url[url.length - 1] !== '#' ? 
-    `#section-${url[url.length - 1].split('-')[1]}`
-    : '#section-1';
-  
-  console.log(currentSection)
-  
-  htmlToCanvas(document.querySelector(currentSection), {
-    onrendered: function (canvas) {
-        document.body.appendChild(canvas);
-        $('canvas').wrap('<div id="contain" />');
-        $('.main-nav').removeClass('hidden');
-        $('.main-nav__blur').removeClass('hidden');
-    }
-  })
+  $('.main-nav').removeClass('hidden');
+  $('.main-nav__blur').removeClass('hidden');
 });
 
 $('.page-header__tel-btn').click(function(){
