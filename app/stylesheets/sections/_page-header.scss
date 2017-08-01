@@ -27,24 +27,8 @@
   box-shadow: -3.5px 3.5px 13.8px 1.2px rgba(0, 0, 0, 0.4);
 
   transition-duratuion: 4s;
+  background: rgba(0,0,0,0.7);
 
-}
-
-#contain {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 36.9%;
-  height: 100%;
-  overflow: hidden;
-  filter: blur(5px);
-  z-index: 31;
-
-  canvas {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
 }
 
 .main-nav__blur {
@@ -78,7 +62,7 @@
 .main-nav__link {
   font-family: Intro;
   font-size: 24px;
-  line-height: 3;
+  line-height: 2.5;
   color: #ffffff;
 
   transition-duration: .3s;
@@ -90,8 +74,8 @@
 
 .main-nav__btn-close {
   position: absolute;
-  top: 32px;
-  right: 59px;
+  top: 25px;
+  right: 45px;
   display: block;
   width: 20px;
   height: 20px;

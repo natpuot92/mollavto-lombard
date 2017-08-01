@@ -20,6 +20,7 @@ $(document).ready(function($) {
         $('.page-header').css('color', '#ffffff');
         $('.page-header__mail a').css('color', '#ffffff');
         $('.page-header__tel-btn').css('color', '#ffffff');
+        $('.main-nav').css('background', 'rgba(0,0,0,0.8)');
         $('.page-header__logo').css('background-image', 'url("./images/logo-white.png")');
         $('.page-header__logo').css('background-repeat', 'no-repeat');
         $('.burger').css('background-image', 'url("./images/burger-white.png")');
@@ -45,6 +46,7 @@ $(document).ready(function($) {
         $('.page-header').css('color', '#000000');
         $('.page-header__mail a').css('color', '#000000');
         $('.page-header__tel-btn').css('color', '#000000');
+        $('.main-nav').css('background', 'rgba(255,255,255,0.9)');
         $('.page-header__logo').css('background-image', 'url("./images/logo-black.png")');
         $('.page-header__logo').css('background-size', 'contain');
         $('.page-header__logo').css('background-repeat', 'no-repeat');
