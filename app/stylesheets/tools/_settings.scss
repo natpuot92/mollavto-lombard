@@ -17,7 +17,7 @@ a {
 
   max-width: 1200px;
   width: 100%;
-  padding: 0 14px;
+  padding: 0 85px;
   margin: 0 auto;
 }
 
@@ -79,6 +79,17 @@ textarea.error {
 @media (max-width: 560px) {
   .container {
     padding: 0 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section__title {
+    text-align: center;
+
+    &::after {
+      left: 50% !important;
+      transform: translateX(-50%);
+    }
   }
 }
 

@@ -8,10 +8,10 @@
 }
 
 .section10__title {
-  margin-bottom: 92px;
+  margin-bottom: 40px;
 
   &::after {
-    bottom: -47px;
+    bottom: -25px;
   }
 
   font-family: Intro;
@@ -22,7 +22,7 @@
 .section10__text {
   max-width: 420px;
   width: 100%;
-  margin-bottom: 42px;
+  margin-bottom: 25px;
 
   font-family: Roboto;
   font-size: 24px;
@@ -33,7 +33,7 @@
 .section10__btn {
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 94px;
+  margin-bottom: 70px;
 }
 
 .section10__location,
@@ -42,7 +42,7 @@
 .section10__email {
   position: relative;
 
-  margin-bottom: 52px;
+  margin-bottom: 35px;
   padding-left: 64px;
 
   font-size: 18px;
@@ -347,5 +347,53 @@
   .section10__footer-copyright {
     margin-bottom: 10px;
   }
+
+}
+
+@media (max-width: 500px) {
+  .section10__title {
+    font-size: 24px;
+  }
+
+  .section10__text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .section10__location {
+    font-size: 16px;
+  }
+  .section10__time {
+    font-size: 16px;
+  }
+  .section10__tel {
+    font-size: 16px;
+  }
+  .section10__email {
+    font-size: 16px;
+  }
+
+  .section10__footer {
+    height: initial;
+    padding: 0 20px;
+    text-align: center;
+
+    &-copyright {
+      margin: 10px auto;
+    }
+  }
+
+  .section10__btn {
+    margin-left: 50%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }
+
+  .chile {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
 
 }

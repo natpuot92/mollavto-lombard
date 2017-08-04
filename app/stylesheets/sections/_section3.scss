@@ -6,14 +6,14 @@
 }
 
 .section__title.section3-title {
-  margin-bottom: 83px;
+  margin-bottom: 40px;
 
   font-family: Intro;
   font-size: 36px;
   color: #ffffff;
 
   &::after {
-    bottom: -45px;
+    bottom: -20px;
   }
 }
 
@@ -555,6 +555,21 @@
     left: 21px;
     width: 257px;
     height: 249px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .section3-title {
+    font-size: 24px !important;
+  }
+  .section3__text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .section3__min-slider {
+    width: 100%;
   }
 
 }

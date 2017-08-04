@@ -20,6 +20,7 @@ $(document).ready(function($) {
         $('.page-header').css('color', '#ffffff');
         $('.page-header__mail a').css('color', '#ffffff');
         $('.page-header__tel-btn').css('color', '#ffffff');
+        $('.main-nav').css('background', 'rgba(0,0,0,0.8)');
         $('.page-header__logo').css('background-image', 'url("./images/logo-white.png")');
         $('.page-header__logo').css('background-repeat', 'no-repeat');
         $('.burger').css('background-image', 'url("./images/burger-white.png")');
@@ -45,6 +46,7 @@ $(document).ready(function($) {
         $('.page-header').css('color', '#000000');
         $('.page-header__mail a').css('color', '#000000');
         $('.page-header__tel-btn').css('color', '#000000');
+        $('.main-nav').css('background', 'rgba(255,255,255,0.9)');
         $('.page-header__logo').css('background-image', 'url("./images/logo-black.png")');
         $('.page-header__logo').css('background-size', 'contain');
         $('.page-header__logo').css('background-repeat', 'no-repeat');
@@ -172,7 +174,7 @@ $('.section9__slider').on('beforeChange', function(event, slick, currentSlide, n
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    pauseOnHover: true,
+    variableWidth: true,
     appendArrows: $('.popup-slider__arrows'),
     prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev popup-slider-prev"><span class = "section3-btn-prev-text popup__slider-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
     nextArrow: '<button id="next" type="button" class="btn section3-btn-next popup-slider-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'
@@ -237,7 +239,7 @@ var askElements = $('.section8__ask');
 
 askElements.each(function(i, element) {
   $(element).click(function(evt) {
-    evt.preventDefault();
+    //evt.preventDefault();
 
     var slideNumber = $(evt.target).attr('data-slide');
 

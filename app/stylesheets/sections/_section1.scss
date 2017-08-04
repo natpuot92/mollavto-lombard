@@ -171,7 +171,7 @@ span.checkbox__yes {
 
   max-width: 275px;
   width: 100%;
-  margin-right: 10.5%;
+  margin-right: 8%;
 
   font-size: 14px;
   line-height: 1.29;
@@ -352,8 +352,9 @@ span.checkbox__yes {
   }
 
   .section1__title1 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
+    margin-top: 25px;
 
   }
 
@@ -390,10 +391,10 @@ span.checkbox__yes {
     left: 0;
     //top: 20px;
   }
-}
 
-@media (max-width: 388px) {
-  .checkbox-wrapper__text-2 {
-
+  .section1__form-btn {
+    max-width: 100%;
+    width: 100%;
   }
 }
+

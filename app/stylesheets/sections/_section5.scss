@@ -37,3 +37,24 @@
     padding-bottom: 40px;
   }
 }
+
+@media (max-width: 500px) {
+  .section5__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+
+    &::after {
+      bottom: -20px;
+    }
+  }
+
+  .section5__text {
+    text-align: center;
+  }
+
+  .section5__btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+}

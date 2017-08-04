@@ -10,7 +10,7 @@
 .section9__title {
   max-width: 393px;
   width: 100%;
-  margin-bottom: 136px;
+  margin-bottom: 65px;
 
   font-family: Intro;
   font-size: 36px;
@@ -18,7 +18,7 @@
   color: #ffffff;
 
   &::after {
-    bottom: -42px;
+    bottom: -30px;
   }
 }
 
@@ -252,5 +252,11 @@
     display: block;
     width: 218px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .section9__title {
+    font-size: 24px;
   }
 }
