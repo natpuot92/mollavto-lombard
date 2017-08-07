@@ -64,9 +64,10 @@ textarea.error {
    border: solid 1px #d24a43;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1368px) {
   .container {
     padding-left: 40px;
+    padding-right: 0;
   }
 }
 

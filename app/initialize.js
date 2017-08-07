@@ -15,6 +15,24 @@ $(document).ready(function($) {
     navigation: true,
     navigationPosition: 'left',
     responsiveWidth: 961,
+    afterLoad: function(page) {
+      console.log(page)
+      if(page === 'page-1') {
+        var duration = 400;
+        var elements = $('.section1__features-item')
+        elements.each(function(index) {
+          console.log(index)
+          $(this).delay(duration * index).queue(function(){
+            $(this).addClass('fadeInUp').dequeue();
+          })
+        });
+      };
+
+      if(!(page === 'page-1')) {
+        $('.section1__features-item').css('opacity', 0);
+        $('.section1__features-item').removeClass('fadeInUp');
+      }
+    },
     onLeave: function (link, index){
       if ((index === 1) || (index === 3) || (index === 5) || (index === 7) || (index === 9)) {
         $('.page-header').css('color', '#ffffff');
@@ -71,18 +89,17 @@ $(document).ready(function($) {
     }
   });
 
-  
+
 });
 
 $('.main-nav__btn-close').click(function() {
-  //$('#contain').remove();
-  $('.main-nav').addClass('hidden');
-  $('.main-nav__blur').addClass('hidden');
+  $('.main-nav').removeClass('menu-left');
+  $('.main-nav').addClass('menu-right');
 });
 
 $('.burger').click(function(){
+  $('.main-nav').addClass('menu-left');
   $('.main-nav').removeClass('hidden');
-  $('.main-nav__blur').removeClass('hidden');
 });
 
 $('.page-header__tel-btn').click(function(){
@@ -194,44 +211,68 @@ $('.popup__slids').on('beforeChange', function(event, slick, currentSlide, nextS
 var checkBox1 = $('.section1__form-checkbox');
 checkBox1.change(function() {
   if(checkBox1.prop('checked')) {
-    $('.checkbox__circle').animate({"left": "23px"}, "fast");
-    $('.checkbox__yes').css("display", "block");
+    $('.checkbox__circle').animate({"left": "23px"}, "fast", function() {
+      $('.checkbox__yes').css("display", "block");
+      $('.checkbox__no').css("display", "none");
+      $('.section1__form-btn').prop('disabled', false);
+    });
   } else {
-    $('.checkbox__circle').animate({"left": "0"}, "fast");
-    $('.checkbox__yes').css("display", "none");
-    }
+    $('.checkbox__circle').animate({"left": "0"}, "fast", function() {
+      $('.checkbox__yes').css("display", "none");
+      $('.checkbox__no').css("display", "block");
+      $('.section1__form-btn').prop('disabled', true);
+    });
+    };
 });
 
 var checkBox2 = $('.popup__phone .section1__form-checkbox');
 checkBox2.change(function() {
   if(checkBox2.prop('checked')) {
-    $('.popup__phone .checkbox__circle').animate({"left": "23px"}, "fast");
-    $('.popup__phone .checkbox__yes').css("display", "block");
+    $('.popup__phone .checkbox__circle').animate({"left": "23px"}, "fast", function() {
+      $('.popup__phone .checkbox__yes').css("display", "block");
+      $('.popup__phone .checkbox__no').css("display", "none");
+      $('.popup__btn').prop('disabled', false);
+    });
   } else {
-    $('.popup__phone .checkbox__circle').animate({"left": "0"}, "fast");
-    $('.popup__phone .checkbox__yes').css("display", "none");
+    $('.popup__phone .checkbox__circle').animate({"left": "0"}, "fast", function() {
+      $('.popup__phone .checkbox__yes').css("display", "none");
+      $('.popup__phone .checkbox__no').css("display", "block");
+      $('.popup__btn').prop('disabled', true);
+    });
     }
 });
 
 var checkBox3 = $('.popup__ask .section1__form-checkbox');
 checkBox3.change(function() {
   if(checkBox3.prop('checked')) {
-    $('.popup__ask .checkbox__circle').animate({"left": "23px"}, "fast");
-    $('.popup__ask .checkbox__yes').css("display", "block");
+    $('.popup__ask .checkbox__circle').animate({"left": "23px"}, "fast", function() {
+      $('.popup__ask .checkbox__yes').css("display", "block");
+      $('.checkbox__no').css("display", "none");
+      $('.popup__btn').prop('disabled', false);
+    });
   } else {
-    $('.popup__ask .checkbox__circle').animate({"left": "0"}, "fast");
-    $('.popup__ask .checkbox__yes').css("display", "none");
+    $('.popup__ask .checkbox__circle').animate({"left": "0"}, "fast", function() {
+      $('.popup__ask .checkbox__yes').css("display", "none");
+      $('.checkbox__no').css("display", "block");
+      $('.popup__btn').prop('disabled', true);
+    });
     }
 });
 
 var checkBox4 = $('.popup__review .section1__form-checkbox');
 checkBox4.change(function() {
   if(checkBox4.prop('checked')) {
-    $('.popup__review .checkbox__circle').animate({"left": "23px"}, "fast");
-    $('.popup__review .checkbox__yes').css("display", "block");
+    $('.popup__review .checkbox__circle').animate({"left": "23px"}, "fast", function() {
+      $('.popup__review .checkbox__yes').css("display", "block");
+      $('.checkbox__no').css("display", "none");
+      $('.popup__btn').prop('disabled', false);
+    });
   } else {
-    $('.popup__review .checkbox__circle').animate({"left": "0"}, "fast");
-    $('.popup__review .checkbox__yes').css("display", "none");
+    $('.popup__review .checkbox__circle').animate({"left": "0"}, "fast", function() {
+      $('.popup__review .checkbox__yes').css("display", "none");
+      $('.checkbox__no').css("display", "block");
+      $('.popup__btn').prop('disabled', true);
+    });
     }
 });
 
@@ -239,12 +280,8 @@ var askElements = $('.section8__ask');
 
 askElements.each(function(i, element) {
   $(element).click(function(evt) {
-    //evt.preventDefault();
-
     var slideNumber = $(evt.target).attr('data-slide');
-
     $('.popup__slider').removeClass('hidden');
-
     $('.popup__slids').slick('slickGoTo', slideNumber);
 
   });

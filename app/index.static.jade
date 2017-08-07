@@ -7,6 +7,7 @@ head
   link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
   link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css")
   link(rel="stylesheet" href="stylesheets/app.css")
+  link(rel="icon" type="image/png" href="images/favicon.png")
 body
   header.page-header
     .page-header__logo-wrapper
@@ -28,7 +29,7 @@ body
         | Заказать звонок
       .menu-btn
         a(href="#").burger
-  .main-nav.hidden
+  .main-nav.animated.hidden
     .main-nav__btn-close
     ul
       li
@@ -61,7 +62,6 @@ body
       li
         a(href="#page-10").main-nav__link
           | Контакты
-    //- .main-nav__blur
   div#fullpage
     .section.section1#section-1
       .container
@@ -77,11 +77,13 @@ body
           input(type="tel" name="your__tel" placeholder="Телефон").section1__form-text.section1__form-tel
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
-              input(type="checkbox" name = "section1__checkbox").section1__form-checkbox
+              input(type="checkbox" name = "section1__checkbox" checked).section1__form-checkbox
               .checkbox
                 span.checkbox__circle
                 span.checkbox__yes.checkbox-active
                   | да
+                span.checkbox__no
+                  | нет
             .checkbox-wrapper__text
               span.checkbox-wrapper__text-1
                 | Даю согласие на
@@ -94,15 +96,15 @@ body
           button(type="submit").btn.section1__form-btn
             | Звоните
         .section1__features
-          .section1__features-item
+          .section1__features-item.animated
             .section1__features-item-icon.section1__features-item-icon-1
             .section1__features-item-text
               | При заключении договора, деньги наличными сразу
-          .section1__features-item
+          .section1__features-item.animated
             .section1__features-item-icon.section1__features-item-icon-2
             .section1__features-item-text
               | Пересчет процентов за пользование займом по дням
-          .section1__features-item
+          .section1__features-item.animated
             .section1__features-item-icon.section1__features-item-icon-3
             .section1__features-item-text
               | Не требуются доверенность или договор купли-продажи
@@ -519,11 +521,13 @@ body
           input(type="tel" name="phone__tel" placeholder="Телефон").popup__phone-form-input
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
-              input(type="checkbox" id = "popup__phone__checkbox" name = "popup__phone__checkbox").section1__form-checkbox
+              input(type="checkbox" id = "popup__phone__checkbox" name = "popup__phone__checkbox" checked).section1__form-checkbox
               .checkbox.popup__checkbox
                 span.checkbox__circle
                 span.checkbox__yes.checkbox-active
                   | да
+                span.checkbox__no
+                  | нет
             .checkbox-wrapper__text.checkbox-wrapper__text-popup
               .checkbox-wrapper__text-1
                 | Даю согласие на
@@ -548,11 +552,13 @@ body
           textarea(name="ask__area").popup__phone-form-textarea
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
-              input(type="checkbox" id = "popup__ask__checkbox" name = "popup__ask__checkbox").section1__form-checkbox
+              input(type="checkbox" id = "popup__ask__checkbox" name = "popup__ask__checkbox" checked).section1__form-checkbox
               .checkbox.popup__checkbox
                 span.checkbox__circle
                 span.checkbox__yes.checkbox-active
                   | да
+                span.checkbox__no
+                  | нет
             .checkbox-wrapper__text.checkbox-wrapper__text-popup
               .checkbox-wrapper__text-1
                 | Даю согласие на
@@ -576,11 +582,13 @@ body
           textarea(name="review__area").popup__phone-form-textarea
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
-              input(type="checkbox" id = "popup__review__checkbox" name = "popup__review__checkbox").section1__form-checkbox
+              input(type="checkbox" id = "popup__review__checkbox" name = "popup__review__checkbox" checked).section1__form-checkbox
               .checkbox.popup__checkbox
                 span.checkbox__circle
                 span.checkbox__yes.checkbox-active
                   | да
+                span.checkbox__no
+                  | нет
             .checkbox-wrapper__text.checkbox-wrapper__text-popup
               .checkbox-wrapper__text-1
                 | Даю согласие на

@@ -111,20 +111,16 @@
 }
 
   .section8__title {
-   margin-bottom: 45px;
+   margin-bottom: 35px;
 
 &::after {
-    bottom: -23px;
+    bottom: -15px;
     }
   }
 
   .section8__ask-wrapper {
     padding-left: 20px;
-    margin-bottom: 5px;
-  }
-
-  .section8__ask-wrapper {
-    margin-bottom: 13px;
+    margin-bottom: 0;
   }
 
   .section8__ask-wrapper-1 {
@@ -140,9 +136,8 @@
 
   .section8__your-ask-text {
     margin-bottom: 14px;
-
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.22;
     color: #030206;
   }
@@ -210,6 +205,8 @@
   }
 
   .section8__your-ask-text {
+    margin: 0 auto;
+    margin-bottom: 20px;
     text-align: center;
   }
 
