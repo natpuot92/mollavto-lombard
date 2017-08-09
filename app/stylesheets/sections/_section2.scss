@@ -45,6 +45,7 @@
 
 .section2__item {
   position: relative;
+  opacity: 0;
 
   display: inline-block;
   vertical-align: top;
@@ -76,10 +77,10 @@
     content: '';
     position: absolute;
     top: 122px;
-    right: -45px;
+    right: -50px;
 
     display: block;
-    width: 60px;
+    width: 82px;
     height: 27px;
 
     background: url('../images/green-line-2.svg') no-repeat center / contain;
@@ -93,12 +94,12 @@
   &::after{
     content: '';
     position: absolute;
-    top: -15px;
+    top: -5px;
     right: 109px;
     transform: rotate(-90deg);
 
     display: block;
-    width: 60px;
+    width: 82px;
     height: 27px;
 
     background: url('../images/green-line-2.svg') no-repeat center / contain;
@@ -109,14 +110,14 @@
   display: table-cell;
 
   padding-top: 219px;
-  padding-left: 108px;
+  padding-left: 83px;
   vertical-align: middle;
 }
 
 .section2__item-icon {
   position: absolute;
-  top: 75px;
-  left: 149px;
+  top: 85px;
+  left: 119px;
 
   width: 102px;
   height: 102px;

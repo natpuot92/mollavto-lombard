@@ -7,7 +7,6 @@ import htmlToCanvas from 'html2canvas'
 
 var mainNavLinks = $('.main-nav li a')
 
-
 $(document).ready(function($) {
   $('#fullpage').fullpage({
     anchors:['page-1','page-2', 'page-3', 'page-4', 'page-5', 'page-6', 'page-7', 'page-8', 'page-9', 'page-10'],
@@ -16,12 +15,10 @@ $(document).ready(function($) {
     navigationPosition: 'left',
     responsiveWidth: 961,
     afterLoad: function(page) {
-      console.log(page)
       if(page === 'page-1') {
         var duration = 400;
         var elements = $('.section1__features-item')
         elements.each(function(index) {
-          console.log(index)
           $(this).delay(duration * index).queue(function(){
             $(this).addClass('fadeInUp').dequeue();
           })
@@ -31,7 +28,31 @@ $(document).ready(function($) {
       if(!(page === 'page-1')) {
         $('.section1__features-item').css('opacity', 0);
         $('.section1__features-item').removeClass('fadeInUp');
-      }
+      };
+
+      if(page === 'page-2') {
+        var duration = 400;
+        var elements = $('.section2__item');
+        var elementsGoodPosition = [];
+
+        elementsGoodPosition[0] = elements[1]
+        elementsGoodPosition[1] = elements[2]
+        elementsGoodPosition[2] = elements[0]
+
+        function addFade (index) {
+          elementsGoodPosition[index].classList.add('fadeInUp');
+        }
+
+        for (var i = 0; elementsGoodPosition.length > i; i++) {
+          var timeout = duration * i
+          setTimeout(addFade, timeout, i);
+        };
+      };
+
+      if(!(page === 'page-2')) {
+        $('.section2__item').css('opacity', 0);
+        $('.section2__item').removeClass('fadeInUp');
+      };
     },
     onLeave: function (link, index){
       if ((index === 1) || (index === 3) || (index === 5) || (index === 7) || (index === 9)) {
@@ -141,25 +162,24 @@ $('.popup__btn-close').click(function(){
 });
 
 $('.section3__big-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
   arrows: false,
+  centerMode: true,
+  speed: 50,
   fade: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
+  //autoplay: true,
+  //autoplaySpeed: 5000,
   asNavFor: '.section3__min-slider',
   focusOnSelect: false,
 });
 
 $('.section3__min-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
+  //autoplay: true,
+  //autoplaySpeed: 5000,
   fade: true,
+  speed: 50,
   appendArrows: $('.section3-slider__arrows'),
   prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
   nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>',
-  autoplay: true,
-  autoplaySpeed: 3000,
   asNavFor: '.section3__big-slider'
 });
 
@@ -167,6 +187,34 @@ $('.section3__counter-min').text('0' + ($('.section3__big-slider .big-slider__sl
 
 $('.section3__big-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   $('.section3__counter-big').text('0' + (nextSlide + 1));
+
+  var imgFotos = $('.big-slider__slide-foto');
+
+  //$(imgFotos[currentSlide]).css('opacity', 0);
+  //$('.slick-active').addClass('fadeInLeft');
+  //$('.slick-current').css('opacity', '1');
+  //console.log(currentSlide);
+
+   $(imgFotos[nextSlide]).addClass('fadeInRight');
+});
+
+$('.section3__big-slider').on('afterChange', function(event, slick, currentSlide){
+  var imgFotos = $('.big-slider__slide-foto');
+  $(imgFotos[currentSlide - 1]).removeClass('fadeInRight');
+  $(imgFotos[currentSlide + 1]).removeClass('fadeInRight');
+
+  //$(imgFotos[currentSlide]).removeClass('fadeInRight');
+  //$(imgFotos[nextSlide]).css('opacity', '0');
+  //$(imgFotos[currentSlide]).addClass('fadeInRight');
+  //$('.slick-active img').addClass('fadeInRight');
+  //imgFotos.each(function(index) {
+//
+//  })
+
+
+
+
+
 });
 
 $('.section9__slider').slick({
