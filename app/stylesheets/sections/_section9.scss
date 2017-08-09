@@ -58,6 +58,15 @@
   background: url('../images/review-foto.png') no-repeat center;
 }
 
+.section9__slide {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.section9__slide.slick-active {
+  opacity: 1;
+}
+
 .section9__slide-text-wrapper {
   display: inline-block;
   width: 394px;

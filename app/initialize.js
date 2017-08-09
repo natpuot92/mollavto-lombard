@@ -53,6 +53,86 @@ $(document).ready(function($) {
         $('.section2__item').css('opacity', 0);
         $('.section2__item').removeClass('fadeInUp');
       };
+
+      if(page === 'page-4') {
+        var duration = 300;
+        var elements = $('.section4__seven, .section4__passport-item');
+
+        elements.each(function(index) {
+          $(this).delay(duration * index).queue(function() {
+            $(this).addClass('fadeIn').dequeue();
+          })
+        });
+      }
+
+      if(!(page === 'page-4')) {
+        $('.section4__seven, .section4__passport-item').css('opacity', 0);
+        $('.section4__seven, .section4__passport-item').removeClass('fadeIn');
+      };
+
+      if(page === 'page-6') {
+        var duration = 300;
+        var elements = $('.section6__passport-item');
+
+        elements.each(function(index) {
+          $(this).delay(duration * index).queue(function() {
+            $(this).addClass('fadeIn').dequeue();
+          })
+        });
+      }
+
+      if(!(page === 'page-6')) {
+        $('.section6__passport-item').css('opacity', 0);
+        $('.section6__passport-item').removeClass('fadeIn');
+      };
+
+      if(page === 'page-7') {
+        var duration = 300;
+        var elements = $('.funcybox-section7');
+
+        elements.each(function(index) {
+          $(this).delay(duration * index).queue(function() {
+            $(this).addClass('fadeInUp').dequeue();
+          })
+        });
+      }
+
+      if(!(page === 'page-7')) {
+        $('.funcybox-section7').css('opacity', 0);
+        $('.funcybox-section7').removeClass('fadeInUp');
+      };
+
+      if(page === 'page-8') {
+        var duration = 100;
+        var elements = $('.section8__ask');
+
+        elements.each(function(index) {
+          $(this).delay(duration * index).queue(function() {
+            $(this).addClass('fadeInUpAsk').dequeue();
+          })
+        });
+      }
+
+      if(!(page === 'page-8')) {
+        $('.section8__ask').css('opacity', 0);
+        $('.section8__ask').removeClass('fadeInUpAsk');
+      };
+
+      if(page === 'page-10') {
+        var duration = 100;
+        var elements = $('.section10-item');
+
+        elements.each(function(index) {
+          $(this).delay(duration * index).queue(function() {
+            $(this).addClass('fadeInUp').dequeue();
+          })
+        });
+      }
+
+      if(!(page === 'page-10')) {
+        $('.section10-item').css('opacity', 0);
+        $('.section10-item').removeClass('fadeInUp');
+      };
     },
     onLeave: function (link, index){
       if ((index === 1) || (index === 3) || (index === 5) || (index === 7) || (index === 9)) {
@@ -165,18 +245,17 @@ $('.section3__counter-min').text('0' + ($('.section3__big-slider .big-slider__sl
 
 $('.section3__big-slider').slick({
   arrows: false,
-  centerMode: true,
   //autoplay: true,
   //autoplaySpeed: 5000,
+  infinite: false,
   asNavFor: '.section3__min-slider',
   focusOnSelect: false,
 });
 
 $('.section3__min-slider').slick({
-  //autoplay: true,
-  //autoplaySpeed: 5000,
-  fade: true,
-  speed: 50,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  infinite: false,
   appendArrows: $('.section3-slider__arrows'),
   prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
   nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>',
@@ -184,20 +263,10 @@ $('.section3__min-slider').slick({
 });
 
 
-
-
-
 $('.section3__big-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   $('.section3__counter-big').text('0' + (nextSlide + 1));
 
-  var imgFotos = $('.big-slider__slide-foto');
 
-  //$(imgFotos[currentSlide]).css('opacity', 0);
-  //$('.slick-active').addClass('fadeInLeft');
-  //$('.slick-current').css('opacity', '1');
-  //console.log(currentSlide);
-
-   $(imgFotos[nextSlide]).addClass('fadeInRight');
 });
 
 $('.section3__big-slider').on('afterChange', function(event, slick, currentSlide){
@@ -205,34 +274,22 @@ $('.section3__big-slider').on('afterChange', function(event, slick, currentSlide
   $(imgFotos[currentSlide - 1]).removeClass('fadeInRight');
   $(imgFotos[currentSlide + 1]).removeClass('fadeInRight');
 
-  //$(imgFotos[currentSlide]).removeClass('fadeInRight');
-  //$(imgFotos[nextSlide]).css('opacity', '0');
-  //$(imgFotos[currentSlide]).addClass('fadeInRight');
-  //$('.slick-active img').addClass('fadeInRight');
-  //imgFotos.each(function(index) {
-//
-//  })
-
-
-
 });
 
 
-
+$('.section9__counter-min').text('0' + ($('.section9__slide').length));
 
 $('.section9__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  fade: true,
+  infinite: false,
   appendArrows: $('.section9-slider__arrows'),
   prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev"><span class = "section3-btn-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
   nextArrow: '<button id="next" type="button" class="btn section3-btn-next"><span class = "section3-btn-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>',
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 5000,
   pauseOnHover: true,
 });
-
-$('.section9__counter-min').text('0' + ($('.section9__slide').length));
 
 $('.section9__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   $('.section9__counter-big').text('0' + (nextSlide + 1));
