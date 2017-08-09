@@ -189,8 +189,6 @@ $(document).ready(function($) {
       }
     }
   });
-
-
 });
 
 $('.main-nav__btn-close').click(function() {
