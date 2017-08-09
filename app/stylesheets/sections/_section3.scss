@@ -28,6 +28,8 @@
 .section3__big-slider {
   position: relative;
 
+  overflow: hidden;
+
   display: inline-block;
 
   z-index: 10;
@@ -49,7 +51,6 @@
   position: absolute;
   z-index: 10;
   margin: 0 auto;
-
 }
 
 .big-slider__slide-foto {

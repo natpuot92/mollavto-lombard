@@ -183,6 +183,8 @@ $('.section3__min-slider').slick({
   asNavFor: '.section3__big-slider'
 });
 
+
+
 $('.section3__counter-min').text('0' + ($('.section3__big-slider .big-slider__slide').length));
 
 $('.section3__big-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -213,9 +215,10 @@ $('.section3__big-slider').on('afterChange', function(event, slick, currentSlide
 
 
 
-
-
 });
+
+
+
 
 $('.section9__slider').slick({
   slidesToShow: 1,
