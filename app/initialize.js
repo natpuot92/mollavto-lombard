@@ -149,10 +149,10 @@ $(document).ready(function($) {
         $('.page-header__mail a').css('color', '#ffffff');
         $('.page-header__tel-btn').css('color', '#ffffff');
         $('.main-nav').css('background', 'rgba(0,0,0,0.8)');
-        $('.page-header__logo').css('background-image', 'url("./images/logo-white.png")');
+        $('.page-header__logo').css('background-image', 'url("images/logo-white.png")');
         $('.page-header__logo').css('background-size', 'contain');
         $('.page-header__logo').css('background-repeat', 'no-repeat');
-        $('.burger').css('background-image', 'url("./images/burger-white.png")');
+        $('.burger').css('background-image', 'url("images/burger-white.png")');
         $('.main-nav li a').css('color', '#ffffff');
         $('.main-nav__btn-close').css('background-image', 'url("./images/main-nav-close-white.png")');
         $('.main-nav__blur').css('background-color', 'rgba(0,0,0,0.8)');
@@ -175,10 +175,10 @@ $(document).ready(function($) {
         $('.page-header__mail a').css('color', '#000000');
         $('.page-header__tel-btn').css('color', '#000000');
         $('.main-nav').css('background', 'rgba(255,255,255,0.9)');
-        $('.page-header__logo').css('background-image', 'url("./images/logo-black.png")');
+        $('.page-header__logo').css('background-image', 'url("images/logo-black.png")');
         $('.page-header__logo').css('background-size', 'contain');
         $('.page-header__logo').css('background-repeat', 'no-repeat');
-        $('.burger').css('background-image', 'url("./images/burger-black.png")');
+        $('.burger').css('background-image', 'url("images/burger-black.png")');
         $('.main-nav li a').css('color', '#000000');
         $('.main-nav__btn-close').css('background-image', 'url("./images/main-nav-close-black.png")');
         $('.main-nav__blur').css('background-color', 'rgba(255,255,255,0.8)');
