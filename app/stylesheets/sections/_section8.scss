@@ -195,6 +195,12 @@
   }
 }
 
+@media (max-width: 940px) {
+  .section8__ask {
+    opacity: 0.7;
+  }
+}
+
 @media (max-width: 500px) {
   .section8__title {
     font-size: 24px;

@@ -265,6 +265,12 @@
   }
 }
 
+@media (max-width: 940px) {
+  .section10-item {
+    opacity: 1;
+  }
+}
+
   @media (max-width: 857px) {
     .section10__map {
       display: none;

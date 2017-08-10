@@ -105,10 +105,15 @@
   }
 }
 
-
 @media (max-width: 960px) {
   .section7 {
     padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 940px) {
+  .funcybox-section7 {
+    opacity: 1;
   }
 }
 

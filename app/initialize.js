@@ -15,124 +15,125 @@ $(document).ready(function($) {
     navigationPosition: 'left',
     responsiveWidth: 961,
     afterLoad: function(page) {
-      if(page === 'page-1') {
-        var duration = 400;
-        var elements = $('.section1__features-item')
-        elements.each(function(index) {
-          $(this).delay(duration * index).queue(function(){
-            $(this).addClass('fadeInUp').dequeue();
-          })
-        });
-      };
+      if ($(document).width() > 940) {
+        if(page === 'page-1') {
+          var duration = 400;
+          var elements = $('.section1__features-item')
+          elements.each(function(index) {
+            $(this).delay(duration * index).queue(function(){
+              $(this).addClass('fadeInUp').dequeue();
+            })
+          });
+        };
+        if(!(page === 'page-1')) {
+          $('.section1__features-item').css('opacity', 0);
+          $('.section1__features-item').removeClass('fadeInUp');
+        };
 
-      if(!(page === 'page-1')) {
-        $('.section1__features-item').css('opacity', 0);
-        $('.section1__features-item').removeClass('fadeInUp');
-      };
+        if(page === 'page-2') {
+          var duration = 400;
+          var elements = $('.section2__item');
+          var elementsGoodPosition = [];
 
-      if(page === 'page-2') {
-        var duration = 400;
-        var elements = $('.section2__item');
-        var elementsGoodPosition = [];
+          elementsGoodPosition[0] = elements[1]
+          elementsGoodPosition[1] = elements[2]
+          elementsGoodPosition[2] = elements[0]
 
-        elementsGoodPosition[0] = elements[1]
-        elementsGoodPosition[1] = elements[2]
-        elementsGoodPosition[2] = elements[0]
+          function addFade (index) {
+            elementsGoodPosition[index].classList.add('fadeInUp');
+          }
 
-        function addFade (index) {
-          elementsGoodPosition[index].classList.add('fadeInUp');
+          for (var i = 0; elementsGoodPosition.length > i; i++) {
+            var timeout = duration * i
+            setTimeout(addFade, timeout, i);
+          };
+        };
+
+        if(!(page === 'page-2')) {
+          $('.section2__item').css('opacity', 0);
+          $('.section2__item').removeClass('fadeInUp');
+        };
+
+        if(page === 'page-4') {
+          var duration = 300;
+          var elements = $('.section4__seven, .section4__passport-item');
+
+          elements.each(function(index) {
+            $(this).delay(duration * index).queue(function() {
+              $(this).addClass('fadeIn').dequeue();
+            })
+          });
         }
 
-        for (var i = 0; elementsGoodPosition.length > i; i++) {
-          var timeout = duration * i
-          setTimeout(addFade, timeout, i);
+        if(!(page === 'page-4')) {
+          $('.section4__seven, .section4__passport-item').css('opacity', 0);
+          $('.section4__seven, .section4__passport-item').removeClass('fadeIn');
         };
-      };
 
-      if(!(page === 'page-2')) {
-        $('.section2__item').css('opacity', 0);
-        $('.section2__item').removeClass('fadeInUp');
-      };
+        if(page === 'page-6') {
+          var duration = 300;
+          var elements = $('.section6__passport-item');
 
-      if(page === 'page-4') {
-        var duration = 300;
-        var elements = $('.section4__seven, .section4__passport-item');
+          elements.each(function(index) {
+            $(this).delay(duration * index).queue(function() {
+              $(this).addClass('fadeIn').dequeue();
+            })
+          });
+        }
 
-        elements.each(function(index) {
-          $(this).delay(duration * index).queue(function() {
-            $(this).addClass('fadeIn').dequeue();
-          })
-        });
+        if(!(page === 'page-6')) {
+          $('.section6__passport-item').css('opacity', 0);
+          $('.section6__passport-item').removeClass('fadeIn');
+        };
+
+        if(page === 'page-7') {
+          var duration = 300;
+          var elements = $('.funcybox-section7');
+
+          elements.each(function(index) {
+            $(this).delay(duration * index).queue(function() {
+              $(this).addClass('fadeInUp').dequeue();
+            })
+          });
+        }
+
+        if(!(page === 'page-7')) {
+          $('.funcybox-section7').css('opacity', 0);
+          $('.funcybox-section7').removeClass('fadeInUp');
+        };
+
+        if(page === 'page-8') {
+          var duration = 100;
+          var elements = $('.section8__ask');
+
+          elements.each(function(index) {
+            $(this).delay(duration * index).queue(function() {
+              $(this).addClass('fadeInUpAsk').dequeue();
+            })
+          });
+        }
+
+        if(!(page === 'page-8')) {
+          $('.section8__ask').css('opacity', 0);
+          $('.section8__ask').removeClass('fadeInUpAsk');
+        };
+
+        if(page === 'page-10') {
+          var duration = 100;
+          var elements = $('.section10-item');
+
+          elements.each(function(index) {
+            $(this).delay(duration * index).queue(function() {
+              $(this).addClass('fadeInUp').dequeue();
+            })
+          });
+        }
+
+        if(!(page === 'page-10')) {
+          $('.section10-item').css('opacity', 0);
+          $('.section10-item').removeClass('fadeInUp');
+        };
       }
-
-      if(!(page === 'page-4')) {
-        $('.section4__seven, .section4__passport-item').css('opacity', 0);
-        $('.section4__seven, .section4__passport-item').removeClass('fadeIn');
-      };
-
-      if(page === 'page-6') {
-        var duration = 300;
-        var elements = $('.section6__passport-item');
-
-        elements.each(function(index) {
-          $(this).delay(duration * index).queue(function() {
-            $(this).addClass('fadeIn').dequeue();
-          })
-        });
-      }
-
-      if(!(page === 'page-6')) {
-        $('.section6__passport-item').css('opacity', 0);
-        $('.section6__passport-item').removeClass('fadeIn');
-      };
-
-      if(page === 'page-7') {
-        var duration = 300;
-        var elements = $('.funcybox-section7');
-
-        elements.each(function(index) {
-          $(this).delay(duration * index).queue(function() {
-            $(this).addClass('fadeInUp').dequeue();
-          })
-        });
-      }
-
-      if(!(page === 'page-7')) {
-        $('.funcybox-section7').css('opacity', 0);
-        $('.funcybox-section7').removeClass('fadeInUp');
-      };
-
-      if(page === 'page-8') {
-        var duration = 100;
-        var elements = $('.section8__ask');
-
-        elements.each(function(index) {
-          $(this).delay(duration * index).queue(function() {
-            $(this).addClass('fadeInUpAsk').dequeue();
-          })
-        });
-      }
-
-      if(!(page === 'page-8')) {
-        $('.section8__ask').css('opacity', 0);
-        $('.section8__ask').removeClass('fadeInUpAsk');
-      };
-
-      if(page === 'page-10') {
-        var duration = 100;
-        var elements = $('.section10-item');
-
-        elements.each(function(index) {
-          $(this).delay(duration * index).queue(function() {
-            $(this).addClass('fadeInUp').dequeue();
-          })
-        });
-      }
-
-      if(!(page === 'page-10')) {
-        $('.section10-item').css('opacity', 0);
-        $('.section10-item').removeClass('fadeInUp');
-      };
     },
     onLeave: function (link, index){
       if ((index === 1) || (index === 3) || (index === 5) || (index === 7) || (index === 9)) {
@@ -243,8 +244,8 @@ $('.section3__counter-min').text('0' + ($('.section3__big-slider .big-slider__sl
 
 $('.section3__big-slider').slick({
   arrows: false,
-  //autoplay: true,
-  //autoplaySpeed: 5000,
+  autoplay: true,
+  autoplaySpeed: 5000,
   infinite: false,
   asNavFor: '.section3__min-slider',
   focusOnSelect: false,

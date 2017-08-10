@@ -359,6 +359,12 @@ span.checkbox__no {
   }
 }
 
+@media (max-width: 940px) {
+  .section1__features-item {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 500px) {
   .section__title {
     margin-bottom: 38px;

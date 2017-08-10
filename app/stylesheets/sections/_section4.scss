@@ -215,6 +215,16 @@
   }
 }
 
+@media (max-width: 940px) {
+  .section4__seven {
+    opacity: 1;
+  }
+
+  .section__passport-item {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 834px) {
   .section4__seven {
     left: 50%;
