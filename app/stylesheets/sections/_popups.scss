@@ -25,6 +25,8 @@
   padding-right: 100px;
   padding-bottom: 90px;
 
+  overflow: auto;
+
   background: #fff;
 }
 
@@ -342,8 +344,32 @@
 
 
 @media (max-width: 490px) {
-
   .popup__success-img {
     width: 99%;
+  }
+
+  .popup__ask-title {
+    margin-bottom: 10px;
+  }
+
+  .popup__ask-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .popup__phone-form-input {
+    margin-bottom: 10px;
+  }
+
+  .popup__phone-form-textarea {
+    margin-bottom: 0;
+  }
+
+  .checkbox-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .popup__review-title {
+    margin-bottom: 15px;
   }
 }

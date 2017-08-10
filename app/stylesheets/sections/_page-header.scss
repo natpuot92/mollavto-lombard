@@ -225,6 +225,24 @@
   transition: background-image .7s;
 }
 
+.arrow-up {
+  position: fixed;
+  z-index: 100;
+  bottom: 10%;
+  right: 5%;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../images/arrow-up.png) no-repeat center;
+  opacity: 0;
+
+  transition: opacity 0.3s;
+}
+
+.arrow-up:hover {
+  background: url(../images/arrow-up_hover.png) no-repeat center;
+}
+
 @media (max-width: 1712px){
   .page-header__time {
     display: block;
@@ -359,6 +377,10 @@
 }
 
 @media (max-width: 500px) {
+  .arrow-up {
+    display: none;
+  }
+
   .main-nav {
     max-width: 100%;
 

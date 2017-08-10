@@ -62,6 +62,7 @@ body
       li
         a(href="#page-10").main-nav__link
           | Контакты
+  a(href="#page-1").arrow-up
   div#fullpage
     .section.section1#section-1
       .container
@@ -73,8 +74,10 @@ body
         .section1__text
           | Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут
         form(action="#" method="#" id = "section1__form").section1__form
-          input(type="text" name="your__name" placeholder="Имя").section1__form-text
-          input(type="tel" name="your__tel" placeholder="Телефон").section1__form-text.section1__form-tel
+          .form-block
+            input(type="text" name="your__name" placeholder="Имя").section1__form-text
+          .form-block
+            input(type="tel" name="your__tel" placeholder="Телефон").section1__form-text.section1__form-tel
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
               input(type="checkbox" name = "section1__checkbox" checked).section1__form-checkbox
@@ -513,8 +516,10 @@ body
         .popup__text.popup__phone-text
           | Для подачи заявки на займ под ПТС оставьте Ваши данные ниже и мы сами свяжемся с Вами в течении 2 минут
         form(action="#" method="#" id = "popup__phone-form").popup__phone-form
-          input(type="text" name="phone__name" placeholder="Имя").popup__phone-form-input
-          input(type="tel" name="phone__tel" placeholder="Телефон").popup__phone-form-input
+          .form-block
+            input(type="text" name="phone__name" placeholder="Имя").popup__phone-form-input
+          .form-block
+            input(type="tel" name="phone__tel" placeholder="Телефон").popup__phone-form-input
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
               input(type="checkbox" id = "popup__phone__checkbox" name = "popup__phone__checkbox" checked).section1__form-checkbox
@@ -543,9 +548,12 @@ body
         .popup__text.popup__ask-text
           | Если не нашли что искали, Вы можете задать свой вопрос, указав имя и почту. И мы сразу ответим Вам!
         form(action="#" method="#" id = "popup__ask-form").popup__phone-form
-          input(type="text" name="ask__name" placeholder="Имя").popup__phone-form-input
-          input(type="email" name="ask__email" placeholder="E-mail").popup__phone-form-input
-          textarea(name="ask__area").popup__phone-form-textarea
+          .form-block
+            input(type="text" name="ask__name" placeholder="Имя").popup__phone-form-input
+          .form-block
+            input(type="email" name="ask__email" placeholder="E-mail").popup__phone-form-input
+          .form-block
+            textarea(name="ask__area").popup__phone-form-textarea
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
               input(type="checkbox" id = "popup__ask__checkbox" name = "popup__ask__checkbox" checked).section1__form-checkbox
@@ -574,8 +582,10 @@ body
         .popup__text.popup__review-text
           | Если Вы воспользовались нашими услугами, напишите отзыв о работе с нами!
         form(action="#" method="#" id = "popup__review-form").popup__phone-form
-          input(type="text" name="review__name" placeholder="Имя").popup__phone-form-input
-          textarea(name="review__area").popup__phone-form-textarea
+          .form-block
+            input(type="text" name="review__name" placeholder="Имя").popup__phone-form-input
+          .form-block
+            textarea(name="review__area").popup__phone-form-textarea
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
               input(type="checkbox" id = "popup__review__checkbox" name = "popup__review__checkbox" checked).section1__form-checkbox

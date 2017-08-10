@@ -1,5 +1,5 @@
 .section7 {
-  background: url('../images/4-background.jpg') no-repeat center;
+  background: url('../images/4-background.png') no-repeat center;
   background-size: cover;
   color: #fff;
 }
@@ -137,7 +137,7 @@
     text-align: center;
 
     a:nth-child(2n) {
-      margin-right: 0;
+      margin-right: 30px;
     }
   }
 
@@ -145,5 +145,12 @@
     margin-left: 50%;
     white-space: nowrap;
     transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 350px) {
+  .funcybox-section7:nth-child(2n) {
+    margin-right: 0;
   }
 }

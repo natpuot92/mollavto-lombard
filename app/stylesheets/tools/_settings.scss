@@ -21,6 +21,15 @@ a {
   margin: 0 auto;
 }
 
+
+.valid {
+  border: solid 1px #accc3d;
+}
+input {
+  position: relative;
+  z-index: 20;
+}
+
 .hidden {
   display: none !important;
 }

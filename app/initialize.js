@@ -87,7 +87,7 @@ $(document).ready(function($) {
         };
 
         if(page === 'page-7') {
-          var duration = 300;
+          var duration = 200;
           var elements = $('.funcybox-section7');
 
           elements.each(function(index) {
@@ -136,15 +136,23 @@ $(document).ready(function($) {
       }
     },
     onLeave: function (link, index){
+      if(index === 1) {
+          $('.arrow-up').css('opacity', 0);
+      }
+
+      if(!(index === 1)) {
+          $('.arrow-up').css('opacity', 1);
+      }
+
       if ((index === 1) || (index === 3) || (index === 5) || (index === 7) || (index === 9)) {
         $('.page-header').css('color', '#ffffff');
         $('.page-header__mail a').css('color', '#ffffff');
         $('.page-header__tel-btn').css('color', '#ffffff');
         $('.main-nav').css('background', 'rgba(0,0,0,0.8)');
         $('.page-header__logo').css('background-image', 'url("./images/logo-white.png")');
+        $('.page-header__logo').css('background-size', 'contain');
         $('.page-header__logo').css('background-repeat', 'no-repeat');
         $('.burger').css('background-image', 'url("./images/burger-white.png")');
-        $('.page-header__logo').css('background-size', 'contain');
         $('.main-nav li a').css('color', '#ffffff');
         $('.main-nav__btn-close').css('background-image', 'url("./images/main-nav-close-white.png")');
         $('.main-nav__blur').css('background-color', 'rgba(0,0,0,0.8)');
@@ -421,11 +429,18 @@ $("#section1__form").validate({
   },
     section1__checkbox: {
       required: true
-  }
+    }
   },
-  errorPlacement: function(error, element) {
-    return true;
+  messages: {
+    your__name: {
+      required: 'укажите ваше имя'
+    },
+    your__tel: {
+      required: 'укажите ваш телефон',
+      digits: 'только цифры'
+    }
   },
+
   submitHandler: function(form) {
 
   }
@@ -444,8 +459,14 @@ $("#popup__phone-form").validate({
       required: true
     }
   },
-  errorPlacement: function(error, element) {
-    return true;
+  messages: {
+    phone__name: {
+      required: 'укажите ваше имя'
+    },
+    phone__tel: {
+      required: 'укажите ваш телефон',
+      digits: 'только цифры'
+    }
   }
 })
 
@@ -465,8 +486,17 @@ $("#popup__ask-form").validate({
       required: true
     }
   },
-  errorPlacement: function(error, element) {
-    return true;
+  messages: {
+    ask__name: {
+      required: 'укажите ваше имя'
+    },
+    ask__email: {
+      required: 'укажите ваш email',
+      email: 'некорректрый email'
+    },
+    ask__area: {
+    required: 'введите ваш вопрос'
+    }
   }
 })
 
@@ -482,7 +512,12 @@ $("#popup__review-form").validate({
       required: true
     }
   },
-  errorPlacement: function(error, element) {
-    return true;
+  messages: {
+    review__name: {
+      required: 'укажите ваше имя'
+    },
+    review__area: {
+    required: 'введите ваш отзыв'
+    }
   }
 })
