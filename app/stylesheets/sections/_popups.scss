@@ -186,10 +186,12 @@
 
 .popup__container-slider {
   padding-top: 70px;
+  padding-bottom: 20px;
+  overflow: auto;
 }
 
 .popup__slids {
-  min-height: 170px;
+  min-height: 310px;
   max-width: 584px;
   width: 100%;
 
@@ -203,6 +205,14 @@
   .slick-track {
     width: 100% !important;
   }
+}
+
+.popup__slid  {
+  opacity: 0;
+}
+
+.slick-active {
+  opacity: 1;
 }
 
 .popup__slider-title {
@@ -312,6 +322,7 @@
 
   .popup__container-slider {
     min-height: 500px;
+    overflow: auto;
   }
 
   .popup__slider__counter {
@@ -371,5 +382,14 @@
 
   .popup__review-title {
     margin-bottom: 15px;
+  }
+
+  .popup__slider-text {
+    font-size: 13px;
+    line-height: 16px
+  }
+
+  .popup__slider-title {
+    margin-bottom: 10px;
   }
 }

@@ -272,8 +272,6 @@ $('.section3__min-slider').slick({
 
 $('.section3__big-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   $('.section3__counter-big').text('0' + (nextSlide + 1));
-
-
 });
 
 $('.section3__big-slider').on('afterChange', function(event, slick, currentSlide){
@@ -298,20 +296,21 @@ $('.section9__slider').slick({
   pauseOnHover: true,
 });
 
-$('.section9__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  $('.section9__counter-big').text('0' + (nextSlide + 1));
-});
-
   $('.popup__slids').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    fade: true,
+    infinite: false,
+    //fade: true,
     variableWidth: true,
     appendArrows: $('.popup-slider__arrows'),
     prevArrow: '<button id="prev" type="button" class="btn section3-btn-prev popup-slider-prev"><span class = "section3-btn-prev-text popup__slider-prev-text">Назад</span><div class="section3-btn-prev-arrow"></div></button>',
     nextArrow: '<button id="next" type="button" class="btn section3-btn-next popup-slider-next"><span class = "section3-btn-next-text popup__slider-next-text">Вперед</span><div class="section3-btn-next-arrow"></div></button>'
   });
 
+
+$('.section9__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  $('.section9__counter-big').text('0' + (nextSlide + 1));
+});
 
 $('.popup__slider__counter-min').text($('.popup__slid').length);
 
